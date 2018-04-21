@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Базовые стили 1с</title>
+    <style>
+        html {
+            color: #000;
+            background: #fff;
+        }
+
+        body {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            color: #4b4b4b;
+            cursor: default;
+            font-family: Arial;
+            font-size: 10pt;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            overflow: auto;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        body,
+        div,
+        p,
+        th,
+        td,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        input,
+        button,
+        textarea,
+        select {
+            margin: 0;
+            padding: 0;
+        }
+
+        .topline {
+            display: table;
+            position: absolute;
+            width: 100%;
+            height: 25px;
+            top: 12px;
+            margin: 0;
+            padding: 0;
+            color: #4b4b4b;
+            cursor: default;
+            font-family: Arial;
+            font-size: 10pt;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .toplineCenter {
+            width: 100%;
+            padding-top: 1px;
+            vertical-align: top;
+            display: table-cell;
+            position: relative;
+            z-index: 0;
+        }
+
+        .toplineBox {
+            position: relative;
+            max-height: 2.6em;
+            display: block;
+            font-size: 14pt;
+        }
+
+        .toplineBoxTitle {
+            position: absolute;
+            height: 1.3em;
+            right: 20px;
+            left: 41px;
+            z-index: 1;
+            font-family: Arial;
+            font-size: 14pt;
+            font-weight: normal;
+            display: block;
+        }
+
+        .blank {
+            background: url(empty.gif) repeat 0 0;
+        }
+
+        .formNav2Area {
+            border-bottom: 1px solid #fff;
+            overflow: hidden;
+            position: absolute;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .pnContainer {
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-left: 2px;
+            padding-top: 9px;
+            padding-right: 9px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .secondaryPanelItem {
+            color: #1c55ae;
+            font-weight: normal;
+            font-size: 10pt;
+            padding-top: 7px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial;
+            cursor: pointer;
+            height: 19px;
+        }
+
+        .secondaryPanelItemActive {
+            color: #333;
+            background-color: #f2f2f2;
+            border-bottom: 0;
+        }
+
+        .secondaryPanelItem.secondaryPanelItemActive span,
+        .secondaryPanelItem.secondaryPanelItemActive.itemLink_hover span {
+            border-bottom: 0;
+        }
+
+        .secondaryPanelItem.itemLink_hover,
+        .secondaryPanelItem.itemLink_hover span {
+            text-decoration: none;
+            border-bottom: solid 1px #1c55ae
+        }
+
+        .secondaryPanelItem span {
+            border-bottom: dotted 1px #1c55ae;
+        }
+
+        .cmdLink_noselect {
+            border: 1px dotted #fff;
+        }
+
+        .ICompactWeb {
+            font-family: 'MS Sans Serif', Arial, Verdana, sans-serif;
+            font-size: 8pt;
+        }
+
+        .ICompactWeb .press {
+            font-family: 'MS Sans Serif', Arial, Verdana, sans-serif;
+            font-size: 8pt;
+        }
+
+        .frameCommand,
+        .command,
+        .commandRight,
+        .commandSeparator,
+        .framePress,
+        .press {
+            height: inherit;
+        }
+
+        a,
+        *[tabindex] {
+            outline: medium none;
+        }
+
+        .lfl .command {
+            height: 26px;
+            top: 2px;
+            overflow: hidden;
+        }
+
+        .ICompactWeb .lfl .command {
+            height: 22px;
+        }
+
+        .command {
+            position: relative;
+            z-index: 0;
+            word-spacing: 1.2em;
+            word-break: break-all;
+        }
+
+        .commandMore .pressMore,
+        .commandMore .pressMorePadding {
+            display: inline-block
+        }
+
+        .commandRight,
+        .commandFieldBox,
+        .framePress,
+        .pressMore,
+        .pressMore .pressBox {
+            max-width: 100%;
+        }
+
+        .commandRight {
+            float: right;
+            text-align: right;
+            word-spacing: 0;
+        }
+
+        .framePress {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .pressCommand,
+        .pressButton {
+            padding-bottom: 1px;
+        }
+
+        .press {
+            display: inline-block;
+            border-radius: 2px;
+            color: #4b4b4b;
+            font-family: Arial;
+            font-size: 1em;
+            position: relative;
+            margin: 0;
+            vertical-align: top;
+            word-spacing: normal;
+            z-index: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .pressBox {
+            border-width: 0 1em;
+            border-style: solid;
+            border-color: transparent;
+            line-height: 1.2;
+            text-align: center;
+            text-decoration: inherit;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .pressMore .pressBox {
+            border-right-width: 1.35em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .pressImg,
+        .pressBox,
+        .pressDrop {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .pressMore .pressDrop {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .pressDrop {
+            margin: 0 .38em 0 -0.6em;
+            width: .6em;
+            min-width: 5px;
+            height: 100%;
+        }
+
+        .pressBeforeMore:first-child {
+            width: 0;
+        }
+
+        .pressBefore:first-child {
+            display: inline-block;
+            width: .000001em;
+            height: inherit;
+            vertical-align: top;
+        }
+
+        .pressBeforeMore {
+            display: none!important;
+        }
+
+        .press:before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin-right: -100%;
+            vertical-align: middle;
+        }
+
+        .press:before,
+        .press i,
+        .press i:before {
+            border-radius: inherit;
+        }
+
+        i,
+        cite,
+        em,
+        var,
+        address,
+        dfn {
+            font-style: italic;
+        }
+
+        .pressDrop:after {
+            font-size: .6em;
+            transform: scaleY(0.55);
+            -webkit-transform: scaleY(0.55);
+            content: '\0025bc';
+            font-family: Arial!important;
+            position: absolute;
+            top: 50%;
+            left: -1px;
+            margin-top: 1px;
+            line-height: 0;
+        }
+
+        .press i {
+            border: 1px solid #b2b2b2;
+            border-bottom-color: #929292;
+            background-color: #fff;
+            -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+
+            background-image: url(_pressBottom.png), url(_pressTop.png);
+            background-repeat: repeat-x;
+            background-position: left bottom, 0 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 1px;
+            left: 0;
+            z-index: -1;
+        }
+
+        .press i:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .press:after {
+            content: '';
+            background-color: rgba(255, 255, 255, 0.01);
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            left: 2px;
+            bottom: 3px;
+        }
+
+        .cloudBorder {
+            border: 1px solid #7a7a7a;
+        }
+
+        .cloud {
+            background: #fff;
+            position: absolute;
+            overflow: hidden;
+            line-height: 1.2em;
+            -webkit-box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .frameSubmenu {
+            background: #fff;
+            position: relative;
+            top: 0;
+            margin-top: -3px;
+            padding: 0 2px;
+            margin: 0 -3px;
+        }
+
+        .submenu {
+            display: block;
+            position: relative;
+            z-index: 0;
+            padding: 0 2px;
+        }
+
+        .submenuBlock {
+            display: table;
+            position: relative;
+            width: 100%;
+            margin: 4px 0 5px;
+            z-index: 0;
+        }
+
+        .submenuName {
+            padding-left: 3.3em;
+            padding-right: 2.8em;
+            height: 1.2em;
+            line-height: 1.2em;
+            white-space: nowrap;
+        }
+
+        .submenuName,
+        .submenuTitle {
+            display: table-cell;
+            position: relative;
+            padding: .5em 0;
+        }
+
+
+        .submenuTitle {
+            color: #999;
+            padding-right: 2.2em;
+            padding-left: 1.6em;
+            text-align: right;
+        }
+
+        .submenuBlock+.submenuBlock {
+            margin-top: -4px;
+        }
+
+        .submenuIco {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            width: 1.2em;
+            height: 1.2em;
+            left: 1em;
+        }
+
+        .ICompactWeb .pressMorePadding {
+            width: .6em;
+        }
+
+        .pressMorePadding {
+            display: none;
+            float: right;
+            width: .7em;
+            height: inherit;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .commandSeparator {
+            vertical-align: top;
+            word-spacing: 0;
+        }
+
+        .ICompactWeb .pressBefore:before {
+            font-size: 16pt;
+        }
+
+        .pressBefore:before {
+            content: ' ';
+            font-size: 2.4em;
+        }
+
+        .pressDefault i {
+            background-color: #ffdc00;
+            border: 1px solid #aa9628;
+            border-bottom-color: #907f22;
+        }
+
+        .lfl .pressCommand .pressImg {
+            margin: 0 5px;
+        }
+
+        .ICompactWeb .pressImg {
+            margin: 0 5px;
+        }
+
+        .pressCommand .pressImg {
+            background-size: 100% auto;
+        }
+
+        .pressImg {
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 16px;
+            height: 16px;
+            max-height: 100%;
+            margin: 0 .5em;
+        }
+
+        .pressImg+.pressBox {
+            border-left-width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topline">
+        <div class="toplineCenter">
+            <div class="toplineBox">
+                <div class="toplineBoxTitle blank">
+                    <p>Заявка №001793</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="formNav2Area" style="left: 12px; top: 46px; width: 797px; height: 28px;">
+        <div class="pnContainer" style="top: 0px; height: 29px;">
+            <div class="secondaryPanelItem secondaryPanelItemActive" style="position:absolute;top:0px;width:59px;left:0px;" onmouseover="this.classList.add('itemLink_hover');"
+                onmouseout="this.classList.remove('itemLink_hover');">
+                <span class="cmdLink_noselect">Основное</span>
+            </div>
+            <div class="secondaryPanelItem" style="position:absolute;top:0px;width:116px;left:79px;" onmouseover="this.classList.add('itemLink_hover');"
+                onmouseout="this.classList.remove('itemLink_hover');">
+                <span class="cmdLink_noselect">История&nbsp;состояний</span>
+            </div>
+            <div class="secondaryPanelItem" style="position:absolute;top:0px;width:149px;left:215px;" onmouseover="this.classList.add('itemLink_hover');"
+                onmouseout="this.classList.remove('itemLink_hover');">
+                <span class="cmdLink_noselect">Присоединенные&nbsp;файлы</span>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; left: 0px; top: 84px; width: 821px; height: 819px;" class="ICompactWeb lfl">
+        <div style="position: absolute; left: 12px; top: 0px; width: 792px; height: 26px;">
+            <div tabindex="0" class="frameCommand">
+                <div class="command commandMore">
+                    <div class="commandRight">
+                        <i class="pressBefore pressBeforeMore"> </i>
+                        <span class="framePress">
+                            <a tabindex="1" class="press pressCommand pressMore">
+                                <span class="pressBox">Еще</span>
+                                <span class="pressDrop"></span>
+                                <i></i>
+                            </a>
+                        </span>
+                        <div class="cloud cloudBorder" style="display: none; position: absolute; overflow: hidden; z-index: 15002; outline: none;"
+                            tabindex="0">
+                            <div class="frameSubmenu" style="top: -1px;">
+                                <div class="submenu">
+                                    <div class="submenuBlock">
+                                        <div class="submenuName">
+                                            <span class="submenuIco" style="background-image: url(saveandclose.png);"></span>
+                                            <span class="submenuText">Записать и закрыть</span>
+                                        </div>
+                                        <div class="submenuTitle">Ctrl+Enter</div>
+                                    </div>
+                                    <div class="submenuBlock">
+                                        <div class="submenuName">
+                                            <span class="submenuIco" style="background-image: url(save.png);"></span>
+                                            <span class="submenuText">Записать</span>
+                                        </div>
+                                        <div class="submenuTitle">Ctrl+S</div>
+                                    </div>
+                                    <div class="submenuBlock">
+                                        <div class="submenuName">
+                                            <span class="submenuIco" style="background-image: url(reload.png);"></span>
+                                            <span class="submenuText">Перечитать</span>
+                                        </div>
+                                    </div>
+                                    <div class="submenuBlock">
+                                        <div class="submenuName">
+                                            <span class="submenuIco" style="background-image: url(help.png);"></span>
+                                            <span class="submenuText">Справка</span>
+                                        </div>
+                                        <div class="submenuTitle">F1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i></i>
+                    </div>
+                    <div class="pressMorePadding"></div>
+                    <span class="commandSeparator">
+                        <i class="pressBefore"> </i>
+                        <span class="framePress" title="Записать и закрыть (Ctrl+Enter)">
+                            <a tabindex="1" class="press pressCommand pressDefault" style="font-weight: bold;">
+                                <span class="pressBox">Записать&nbsp;и&nbsp;закрыть</span>
+                                <i></i>
+                            </a>
+                        </span>
+                        <i class="pressBefore"> </i>
+                        <span class="framePress" title="Записать объект (Ctrl+S)">
+                            <a tabindex="1" class="press pressCommand">
+                                <span class="pressBox">Записать</span>
+                                <i></i>
+                            </a>
+                        </span>
+                        <i class="pressBefore"> </i>
+                        <span class="framePress" title="Отправить письмо">
+                            <a tabindex="1" class="press pressCommand">
+                                <span class="pressImg" style="background-image: url(email.png);"></span>
+                                <span class="pressBox">Отправить&nbsp;письмо</span>
+                                <i></i>
+                            </a>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
