@@ -1,0 +1,2414 @@
+html {
+    color: #000;
+    background: #fff;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    color: #4b4b4b;
+    cursor: default;
+    font-family: Arial;
+    font-size: 10pt;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    overflow: auto;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body,
+div,
+p,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+button,
+caption,
+code,
+em,
+input,
+optgroup,
+option,
+select,
+strong,
+textarea,
+th,
+var {
+    font: inherit
+}
+
+li {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+legend {
+    color: #000
+}
+
+textarea {
+    resize: none
+}
+
+.hiddenContainer {
+    position: absolute;
+    left: -100000px;
+    top: -100000px
+}
+
+.control-disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: .5
+}
+
+.loadProgress {
+    width: 600px;
+    height: 12px;
+    top: 140px;
+    left: -300px;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(loaderbg.png);
+    background-repeat: repeat-x
+}
+
+.loadProgressFrame {
+    height: 12px;
+    position: absolute;
+    background-image: url(loaderbg2.png);
+    background-repeat: repeat-x
+}
+
+.topline {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top: 12px;
+    margin: 0;
+    padding: 0;
+    color: #4b4b4b;
+    cursor: default;
+    font-family: Arial;
+    font-size: 10pt;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.toplineCenter {
+    width: 100%;
+    padding-top: 1px;
+    vertical-align: top;
+    display: table-cell;
+    position: relative;
+    z-index: 0;
+}
+
+.toplineBox {
+    position: relative;
+    max-height: 2.6em;
+    display: block;
+    font-size: 14pt;
+}
+
+.toplineBoxTitle {
+    position: absolute;
+    height: 1.3em;
+    right: 20px;
+    left: 41px;
+    z-index: 1;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight: normal;
+    display: block;
+}
+
+.blank {
+    background: url(empty.gif) repeat 0 0;
+}
+
+.formNav2Area {
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    position: absolute;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.pnContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 2px;
+    padding-top: 9px;
+    padding-right: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.secondaryPanelItem {
+    color: #1c55ae;
+    font-weight: normal;
+    font-size: 10pt;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial;
+    cursor: pointer;
+    height: 19px;
+}
+
+.secondaryPanelItemActive {
+    color: #333;
+    background-color: #f2f2f2;
+    border-bottom: 0;
+}
+
+.secondaryPanelItem.secondaryPanelItemActive span,
+.secondaryPanelItem.secondaryPanelItemActive.itemLink_hover span {
+    border-bottom: 0;
+}
+
+.secondaryPanelItem.itemLink_hover,
+.secondaryPanelItem.itemLink_hover span {
+    text-decoration: none;
+    border-bottom: solid 1px #1c55ae
+}
+
+.secondaryPanelItem span {
+    border-bottom: dotted 1px #1c55ae;
+}
+
+.cmdLink_noselect {
+    border: 1px dotted #fff;
+}
+
+.ICompactWeb {
+    font-family: 'MS Sans Serif', Arial, Verdana, sans-serif;
+    font-size: 8pt;
+}
+
+.ICompactWeb .press {
+    font-family: 'MS Sans Serif', Arial, Verdana, sans-serif;
+    font-size: 8pt;
+}
+
+.frameCommand,
+.command,
+.commandRight,
+.commandSeparator,
+.framePress,
+.press {
+    height: inherit;
+}
+
+a,
+*[tabindex] {
+    outline: medium none;
+}
+
+.lfl .command {
+    height: 26px;
+    top: 2px;
+    overflow: hidden;
+}
+
+.ICompactWeb .lfl .command {
+    height: 22px;
+}
+
+.command {
+    position: relative;
+    z-index: 0;
+    word-spacing: 1.2em;
+    word-break: break-all;
+}
+
+.commandMore .pressMore,
+.commandMore .pressMorePadding {
+    display: inline-block
+}
+
+.commandRight,
+.commandFieldBox,
+.framePress,
+.pressMore,
+.pressMore .pressBox {
+    max-width: 100%;
+}
+
+.commandRight {
+    float: right;
+    text-align: right;
+    word-spacing: 0;
+}
+
+.framePress {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.pressCommand,
+.pressButton {
+    padding-bottom: 1px;
+}
+
+.press {
+    display: inline-block;
+    border-radius: 2px;
+    color: #4b4b4b;
+    font-family: Arial;
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    vertical-align: top;
+    word-spacing: normal;
+    z-index: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.pressBox {
+    border-width: 0 1em;
+    border-style: solid;
+    border-color: transparent;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: inherit;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.pressMore .pressBox {
+    border-right-width: 1.35em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.pressImg,
+.pressBox,
+.pressDrop {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.pressMore .pressDrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pressDrop {
+    margin: 0 .38em 0 -0.6em;
+    width: .6em;
+    min-width: 5px;
+    height: 100%;
+}
+
+.pressBeforeMore:first-child {
+    width: 0;
+}
+
+.pressBefore:first-child {
+    display: inline-block;
+    width: .000001em;
+    height: inherit;
+    vertical-align: top;
+}
+
+.pressBeforeMore {
+    display: none !important;
+}
+
+.press:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-right: -100%;
+    vertical-align: middle;
+}
+
+.press:before,
+.press i,
+.press i:before {
+    border-radius: inherit;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+    font-style: italic;
+}
+
+.pressDrop:after {
+    font-size: .6em;
+    transform: scaleY(0.55);
+    -webkit-transform: scaleY(0.55);
+    content: '\0025bc';
+    font-family: Arial !important;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    margin-top: 1px;
+    line-height: 0;
+}
+
+.press i {
+    border: 1px solid #b2b2b2;
+    border-bottom-color: #929292;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    background-image: url(_pressBottom.png), url(_pressTop.png);
+    background-repeat: repeat-x;
+    background-position: left bottom, 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+}
+
+.press i:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.press:after {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.01);
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    left: 2px;
+    bottom: 3px;
+}
+
+.focus.pressCommand:after {
+    border: 1px dotted #000;
+    border-image: url(_focus.png) 1 1 1 1 repeat repeat;
+}
+
+.cloudBorder {
+    border: 1px solid #7a7a7a;
+}
+
+.cloud {
+    background: #fff;
+    position: absolute;
+    overflow: hidden;
+    line-height: 1.2em;
+    -webkit-box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+}
+
+.frameSubmenu {
+    background: #fff;
+    position: relative;
+    top: 0;
+    margin-top: -3px;
+    padding: 0 2px;
+    margin: 0 -3px;
+}
+
+.submenu {
+    display: block;
+    position: relative;
+    z-index: 0;
+    padding: 0 2px;
+}
+
+.submenuBlock {
+    display: table;
+    position: relative;
+    width: 100%;
+    margin: 4px 0 5px;
+    z-index: 0;
+}
+
+.submenuName {
+    padding-left: 3.3em;
+    padding-right: 2.8em;
+    height: 1.2em;
+    line-height: 1.2em;
+    white-space: nowrap;
+}
+
+.submenuName,
+.submenuTitle {
+    display: table-cell;
+    position: relative;
+    padding: .5em 0;
+}
+
+.submenuTitle {
+    color: #999;
+    padding-right: 2.2em;
+    padding-left: 1.6em;
+    text-align: right;
+}
+
+.submenuBlock+.submenuBlock {
+    margin-top: -4px;
+}
+
+.submenuIco {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    left: 1em;
+}
+
+.ICompactWeb .pressMorePadding {
+    width: .6em;
+}
+
+.pressMorePadding {
+    display: none;
+    float: right;
+    width: .7em;
+    height: inherit;
+    background: rgba(0, 0, 0, 0);
+}
+
+.commandSeparator {
+    vertical-align: top;
+    word-spacing: 0;
+}
+
+.ICompactWeb .pressBefore:before {
+    font-size: 16pt;
+}
+
+.pressBefore:before {
+    content: ' ';
+    font-size: 2.4em;
+}
+
+.pressDefault i {
+    background-color: #ffdc00;
+    border: 1px solid #aa9628;
+    border-bottom-color: #907f22;
+}
+
+.lfl .pressCommand .pressImg {
+    margin: 0 5px;
+}
+
+.ICompactWeb .pressImg {
+    margin: 0 5px;
+}
+
+.pressCommand .pressImg {
+    background-size: 100% auto;
+}
+
+.pressImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    max-height: 100%;
+    margin: 0 .5em;
+}
+
+.pressImg+.pressBox {
+    border-left-width: 0;
+}
+
+.press:ACTIVE span {
+    top: 1px
+}
+
+.pressImg+.pressDrop {
+    margin-left: -0.2em
+}
+
+.press:HOVER i:before,
+.press:ACTIVE i:before {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3)
+}
+
+.press:ACTIVE i {
+    background-image: none;
+    -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset
+}
+
+.press:HOVER i:before {
+    background-color: rgba(255, 255, 255, 0.08)
+}
+
+.press:ACTIVE i:before {
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.pressLink {
+    color: #1834a1
+}
+
+.staticTextTable {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    padding: 0;
+    border-collapse: collapse;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    /* border-collapse: separate;
+    border-spacing: 2px; */
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.staticTextTable td {
+    padding: 0;
+}
+
+.staticText {
+    overflow: hidden;
+    border-color: #b3ac86;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    color: #333
+}
+
+.ICompactWeb .staticText {
+    border-color: #a0a0a0
+}
+
+.staticTextImgContainer {
+    background-repeat: no-repeat;
+    background-position: 0 0
+}
+
+.staticTextHyper {
+    color: #1c55ae;
+    cursor: pointer;
+    text-decoration: underline;
+    border: 1px dotted transparent
+}
+
+.staticTextHyperBorder {
+    border: 1px dotted transparent
+}
+
+td,
+th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+label {
+    cursor: default;
+}
+
+.field {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 1.2;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.inlinesField,
+.inputsField,
+.btnsField {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    vertical-align: top;
+}
+
+.inlinesField,
+.inlines,
+.inputsField,
+.btnsField,
+.inputs,
+.btns,
+.fieldLine .btns {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: inherit;
+}
+
+.inlines {
+    border-width: 1px 0 1px 1px;
+    border-radius: 3px 0 0 3px;
+    padding-left: .3em;
+    line-height: 0;
+}
+
+.inlines,
+.inputs {
+    display: block;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #a0a0a0;
+    position: relative;
+    height: 100%;
+}
+
+.inlines:before,
+.inputs:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.inputsField {
+    width: 100%;
+}
+
+.ICompactWeb .inputs {
+    font-family: 'MS Sans Serif', Arial, Verdana, sans-serif;
+    font-size: 8pt;
+}
+
+.fieldOne .inputs {
+    border-radius: 0 3px 3px 0;
+}
+
+.inputs {
+    border-width: 1px 1px 1px 0;
+    color: #333;
+    font-family: Arial;
+    font-size: 1em;
+    padding-right: 3px;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: text;
+}
+
+.editInput,
+.inputHint,
+.inputHint:before {
+    font: inherit;
+    text-decoration: inherit;
+    text-align: left;
+}
+
+.editInput {
+    overflow: hidden;
+    height: 1.2em;
+}
+
+.editInput,
+.editArea {
+    display: inline-block;
+    color: inherit;
+    border: none;
+    background: transparent;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input,
+textarea {
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+
+input:focus,
+textarea:focus {
+    outline-width: 0;
+
+}
+
+input::-ms-clear {
+    display: none
+}
+
+textarea::-ms-clear {
+    display: none
+}
+
+input::-ms-reveal {
+    display: none
+}
+
+textarea::-ms-reveal {
+    display: none
+}
+
+.is-user-select-disabled {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.fieldOne .btnsField {
+    display: none;
+}
+
+.btns {
+    background-color: #fff;
+    border-width: 1px 1px 1px 0;
+    border-radius: 1px 3px 3px 1px;
+    margin-left: -1px;
+    display: block;
+    border-style: solid;
+    border-color: #a0a0a0;
+    position: relative;
+    height: 100%;
+}
+
+.tabControl {
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.tabControlHeader,
+.tabControlHeaderSide {
+    border: none;
+    overflow: hidden;
+    position: absolute;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.tabControlHeader table,
+.tabControlHeaderSide table {
+    border: none;
+    table-layout: fixed;
+    border-collapse: separate;
+    width: 100%;
+    height: 100%;
+}
+
+.ICompactWeb .tabControlHeader td,
+.ICompactWeb .tabControlHeaderSide td {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.ICompactWeb .tabControlLeftSelected {
+    border-right-color: #fff;
+    background-image: none;
+}
+
+.tabControlHeaderLeft .tabControlHeaderCellRounded {
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.ICompactWeb .tabControlHeaderCellFF {
+    border: 1px solid #b3b3b3;
+}
+
+.ICompactWeb .tabControlHeaderCellLeft {
+    border-right: 1px solid #b3b3b3;
+}
+
+.ICompactWeb .tabControlHeaderCell,
+.ICompactWeb .tabControlHeaderCellBottom,
+.ICompactWeb .tabControlHeaderCellLeft,
+.ICompactWeb .tabControlHeaderCellRight {
+    background-color: #ebebeb;
+    border: 1px solid #b3b3b3;
+}
+
+.tabControlHeaderSide td {
+    padding: 3px 8px 2px;
+}
+
+.tabControlLeftSelected {
+    border-right-color: #fcfaeb;
+    background-image: url(tabCtrlBackLeft.png);
+    background-position: left;
+}
+
+.tabControlLeftSelected,
+.tabControlRightSelected {
+    background-repeat: repeat-y;
+}
+
+.tabControlSelected,
+.tabControlBottomSelected,
+.tabControlLeftSelected,
+.tabControlRightSelected {
+    background-color: transparent;
+}
+
+.tabControlHeaderCellFF {
+    border: 1px solid #b3ac86;
+}
+
+.tabControlHeaderCellLeft {
+    border-right: 1px solid #b3ac86;
+}
+
+.tabControlHeaderCell,
+.tabControlHeaderCellBottom,
+.tabControlHeaderCellLeft,
+.tabControlHeaderCellRight {
+    padding: 0;
+    background-color: #ebe6cc;
+}
+
+.tabControlHeaderSide .title {
+    display: inline-block;
+    position: relative;
+}
+
+.tabControlHeaderSide div {
+    position: relative;
+    top: 0;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.ICompactWeb .tabControlHeaderLastCellLeft {
+    border-right: #b3b3b3 solid 1px;
+}
+
+td.tabControlHeaderLastCellLeft {
+    height: 100%;
+    border-right: #b3ac86 solid 1px;
+    padding: 0;
+}
+
+.tabControlHeaderCellSeparatorLeft {
+    border-right: 1px solid #b3ac86;
+}
+
+.tabControlHeaderCellSeparatorLeft,
+.tabControlHeaderCellSeparatorRight {
+    height: 0;
+    font-size: 0;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.ICompactWeb .tabControlContainerLeft {
+    border-left: none;
+}
+
+.ICompactWeb .tabControlContainer,
+.ICompactWeb .tabControlContainerBottom,
+.ICompactWeb .tabControlContainerLeft,
+.ICompactWeb .tabControlContainerRight {
+    border: 1px solid #b3b3b3;
+}
+
+.tabControlContainerLeft {
+    border-left: none;
+}
+
+.tabControlContainer,
+.tabControlContainerBottom,
+.tabControlContainerLeft,
+.tabControlContainerRight {
+    border: 1px solid #b3ac86;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.ICompactWeb .preloader {
+    background-color: #fff;
+}
+
+.preloader {
+    z-index: 505;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fcfaeb;
+}
+
+.ICompactWeb .tabsScroll {
+    font-size: 8pt;
+}
+
+.tabsScroll {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 14px;
+    font-size: 8pt;
+}
+
+.ICompactWeb .tabsScrollUp,
+.ICompactWeb .tabsScrollDown {
+    background-color: #f6f6f6;
+    border-color: #a0a0a0;
+}
+
+.tabsScrollUp,
+.tabsScrollDown {
+    display: inline-block;
+    background-color: #f3f0db;
+    border: 1px solid #b3ac86;
+    border-radius: 1px;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+}
+
+.radio {
+    background-image: url(radio.png);
+    background-position: 0 0
+}
+
+.radioDisabled {
+    background-position: 10% 0 !important
+}
+
+.radio:HOVER {
+    background-position: 20% 0
+}
+
+.radio:ACTIVE {
+    background-position: 30% 0
+}
+
+.radio.select {
+    background-position: 40% 0
+}
+
+.radio.radioDisabled.select {
+    background-position: 50% 0 !important
+}
+
+.radio.select:HOVER {
+    background-position: 60% 0
+}
+
+.radio.select:ACTIVE {
+    background-position: 70% 0
+}
+
+.radioLabel {
+    position: relative;
+    top: 0;
+    outline: none;
+    font-size: 1em;
+    font-family: Arial;
+    white-space: pre-wrap
+}
+
+.radioTable {
+    height: 100%;
+    width: 100%
+}
+
+.radioTable td {
+    vertical-align: top
+}
+
+.radioLabel.focus {
+    outline: 1px dotted #030514;
+    outline-offset: -1px
+}
+
+.radioLabel span {
+    position: relative
+}
+
+.checkbox {
+    background-image: url(check.png);
+    background-position: 20% 0
+}
+
+.checkbox.select {
+    background-position: 0 0
+}
+
+.checkbox.checkboxDisabled.select {
+    background-position: 5% 0 !important
+}
+
+.checkbox.select:HOVER {
+    background-position: 10% 0
+}
+
+.checkbox.select:ACTIVE {
+    background-position: 15% 0
+}
+
+.checkboxDisabled {
+    background-position: 25% 0 !important
+}
+
+.checkbox:HOVER {
+    background-position: 30% 0
+}
+
+.checkbox:ACTIVE {
+    background-position: 35% 0
+}
+
+.checkboxThreeState.checkbox {
+    background-position: 40% 0
+}
+
+.checkboxThreeState.checkbox.checkboxDisabled {
+    background-position: 45% 0 !important
+}
+
+.checkboxThreeState.checkbox:HOVER {
+    background-position: 50% 0
+}
+
+.checkboxThreeState.checkbox:ACTIVE {
+    background-position: 55% 0
+}
+
+.checkboxWhere {
+    background-position: 80% 0
+}
+
+.radio,
+.checkbox {
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 17px;
+    height: 17px
+}
+
+.ICompactWeb .radio,
+.ICompactWeb .checkbox {
+    width: 15px;
+    height: 15px
+}
+
+.ICompactWeb .radio {
+    background-image: url(radio.png)
+}
+
+.ICompactWeb .checkbox {
+    background-image: url(check.png)
+}
+
+.btn {
+    display: inline-block;
+    /* border-left: 1px solid #a0a0a0; */
+    border-radius: 0 2px 2px 0;
+    position: relative;
+    height: 100%;
+    vertical-align: middle
+}
+
+.btn i {
+    display: inline-block;
+    border-width: 0 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-image: url(edtButtons.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 16px;
+    height: 100%;
+    vertical-align: middle
+}
+
+.btn.iSB,
+.btn.iSB i {
+    vertical-align: top
+}
+
+.btn .iSBI {
+    position: relative;
+    height: 50%
+}
+
+.btn .iSBD {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    bottom: 0;
+    left: 0
+}
+
+.iSBD {
+    border-top: 1px solid #a0a0a0 !important
+}
+
+.btn i:ACTIVE:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 2px;
+    top: 0;
+    right: -15%;
+    left: -15%
+}
+
+.btn:HOVER,
+.iSB i:HOVER,
+.btn:ACTIVE,
+.iSB i:ACTIVE {
+    background-color: #f2f2f2
+}
+
+.iSB:HOVER,
+.iSB:ACTIVE {
+    background-color: #fff
+}
+
+.iCBI i {
+    background-position: center center
+}
+
+.iCB i {
+    background-position: 87.5% center
+}
+
+.iCalcB i {
+    background-position: 0 center
+}
+
+.iCalendB i {
+    background-position: 12.5% center
+}
+
+.iSBD {
+    background-position: 25% center
+}
+
+.iSBI {
+    background-position: 37.5% center
+}
+
+.iOB i {
+    background-position: 50% center
+}
+
+.iDLB i,
+.iCLB i {
+    background-position: 62.5% center
+}
+
+.iCLR i {
+    background-position: 75% center
+}
+
+.frameTrackbar {
+    font-size: 10px;
+    vertical-align: middle
+}
+
+.trackbar {
+    font-size: 100%;
+    display: inline-block;
+    border-width: .9em .9em 1.2em 1.2em;
+    border-style: solid;
+    border-color: transparent;
+    position: relative;
+    width: .2em;
+    height: .2em;
+    margin: .9em;
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+.trackbarMark {
+    position: absolute;
+    line-height: 1
+}
+
+.trackbarMark span {
+    position: relative
+}
+
+.trackbarMark span:before,.trackbarMark span:after {
+    display: inline-block;
+    position: absolute
+}
+
+.trackbarMark span:before,.trackbarMark span:after {
+    background: #c7c7c7;
+    max-width: 23px;
+    max-height: 23px
+}
+
+.trackbarMark span.select:before,.trackbarMark span.select:after {
+    background: #009646
+}
+
+.trackbarTop .trackbarMark span:before,.trackbarBot .trackbarMark span:after {
+    content: ''
+}
+
+.trackbarTrack {
+    position: absolute
+}
+
+.trackbarProgress {
+    position: relative
+}
+
+.trackbarTrack:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.trackbarProgress:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: #009646
+}
+
+.trackbarTrack:before,.trackbarProgress:before {
+    position: absolute
+}
+
+.trackbarTrack:before {
+    background-color: #c7c7c7
+}
+
+.trackbarSlider {
+    display: inline-block;
+    position: absolute
+}
+
+.trackbarSlider:before {
+    content: '';
+    position: absolute
+}
+
+.trackbarSlider {
+    width: 1.6em;
+    height: 1.6em
+}
+
+.trackbarSlider:before {
+    width: 1.6em;
+    height: 1.6em;
+    background: url(_trackbarTaxi.png) no-repeat -16px 0;
+    top: 0;
+    left: 0
+}
+
+.trackbarSlider:after {
+    content: attr(data-content);
+    font-size: 8pt;
+    position: absolute;
+    width: 36px;
+    top: -30px;
+    right: -10px;
+    text-align: center
+}
+
+.trackbarSliderLeft:after {
+    text-align: left
+}
+
+.trackbarH.frameTrackbar {
+    white-space: nowrap
+}
+
+.trackbarH.frameTrackbar:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle
+}
+
+.trackbarH .trackbar {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0
+}
+
+.trackbarH .trackbarMark {
+    min-width: 100%;
+    top: -1.2em;
+    bottom: -1.2em
+}
+
+.trackbarH .trackbarMark span {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    margin-left: inherit
+}
+
+.trackbarH .trackbarMark span:first-child {
+    left: 0;
+    margin-left: 0
+}
+
+.trackbarH .trackbarMark span:before,.trackbarH .trackbarMark span:after {
+    width: .2em;
+    height: .2em;
+    right: 0
+}
+
+.trackbarH .trackbarMark span:before {
+    top: 0
+}
+
+.trackbarH .trackbarMark span:after {
+    bottom: 0
+}
+
+.trackbarH .trackbarTrack,.trackbarH .trackbarProgress,.trackbarH .trackbarProgress:before {
+    height: inherit
+}
+
+.trackbarH .trackbarTrack,.trackbarH .trackbarProgress:before {
+    right: -0.3em;
+    left: -0.3em
+}
+
+.trackbarH .trackbarSlider {
+    right: -0.7em;
+    top: -0.7em
+}
+
+.trackbarH .trackbarTop.trackbarBot {
+    vertical-align: middle
+}
+
+.trackbarH .trackbarTop {
+    vertical-align: bottom
+}
+
+.trackbarH .trackbarBot {
+    vertical-align: top
+}
+
+.trackbarV.frameTrackbar {
+    text-align: center
+}
+
+.trackbarV .trackbar {
+    border-right-width: 0;
+    border-left-width: 0;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.trackbarV .trackbarMark {
+    min-height: 100%;
+    right: -1.2em;
+    left: -1.2em;
+    line-height: 0
+}
+
+.trackbarV .trackbarMark span {
+    display: block;
+    width: 100%;
+    height: inherit
+}
+
+.trackbarV .trackbarMark span:before,.trackbarV .trackbarMark span:after {
+    width: .2em;
+    height: .2em;
+    top: 0
+}
+
+.trackbarV .trackbarMark span:before {
+    left: -1px
+}
+
+.trackbarV .trackbarMark span:after {
+    right: -1px
+}
+
+.trackbarV .trackbarTrack,.trackbarV .trackbarProgress,.trackbarV .trackbarProgress:before {
+    width: inherit
+}
+
+.trackbarV .trackbarTrack,.trackbarV .trackbarProgress:before {
+    top: -0.3em;
+    bottom: -0.3em
+}
+
+.trackbarV .trackbarSlider {
+    bottom: -0.9em;
+    left: -0.7em
+}
+
+.trackbarV .trackbarTop.trackbarBot {
+    position: relative
+}
+
+.trackbarV .trackbarTop {
+    position: absolute;
+    right: 0
+}
+
+.trackbarV .trackbarBot {
+    position: absolute;
+    left: 0
+}
+
+.fieldMultiLine .inputHint:before {
+    padding-top: .3em;
+    vertical-align: top
+}
+
+.fieldMultiLine .inputs {
+    border-bottom-right-radius: 3px;
+    padding-right: 2px
+}
+
+.fieldLine .inputsField {
+    border-bottom-right-radius: 3px
+}
+
+.fieldLine .btns {
+    max-height: 1.85em
+}
+
+.fieldAlignCenter .inputHint:before,.fieldAlignCenter .editInput,.fieldAlignCenter .editArea {
+    text-align: center
+}
+
+.fieldAlignRight .inputHint:before,.fieldAlignRight .editInput,.fieldAlignRight .editArea {
+    text-align: right
+}
+
+.fieldReadOnly .iOB,.fieldWarningOnEdit .btn,.fieldReadOnly .editArea,.fieldWarningOnEdit .editArea,.fieldReadOnly .editInput,.fieldWarningOnEdit .editInput {
+    z-index: 1
+}
+
+.editArea {
+    overflow: auto;
+    height: 100%;
+    padding-top: .3em;
+    font: inherit;
+    text-decoration: inherit;
+    text-align: left
+}
+
+.inputHint {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.inputHint:before,.inputHint:after {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.inputHint:before {
+    content: attr(data-content);
+    color: #c8c8c8;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.inputHint:after {
+    content: '';
+    display: inline-block;
+    font: 0;
+    width: 0;
+    height: 100%
+}
+
+.gridOutline {
+    outline: none;
+    position: absolute
+}
+
+.ICompactWeb .gridOutline {
+    font-family: 'MS Sans Serif',Arial,Verdana,sans-serif;
+    font-size: 8pt
+}
+
+.grid {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #b3ac86;
+    overflow: hidden
+}
+
+.ICompactWeb .grid {
+    color: #333;
+    border: 1px solid #a0a0a0
+}
+
+.ICompactWeb .panel .grid {
+    border: none!important
+}
+
+.gridContainer {
+    border-collapse: collapse;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.gridContainer td {
+    padding: 0
+}
+
+.gridContentDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.gridVertScroll,.gridHorScroll {
+    border: 1px solid silver;
+    position: absolute;
+    overflow: hidden;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.gridVertScroll {
+    width: 15px;
+    top: 0;
+    right: 0;
+    border-right: none;
+    border-top: none
+}
+
+.ICompactWeb .gridVertScroll {
+    width: 14px;
+    border: 0
+}
+
+.gridHorScroll {
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    border-bottom: none;
+    border-left: none
+}
+
+.ICompactWeb .gridHorScroll {
+    height: 14px;
+    border: 0
+}
+
+.emptyGridFocus {
+    border: dotted 1px darkgray!important
+}
+
+.emptyGridMarkIncomplete {
+    border-bottom: red 1px dotted!important;
+    line-height: 19px;
+    width: 100%
+}
+
+.ICompactWeb .gridFocusHM {
+    border-left: dotted 1px #536ac2!important;
+    border-top: dotted 1px #536ac2!important;
+    border-right: dotted 1px #536ac2!important;
+    border-bottom: dotted 1px #536ac2!important
+}
+
+.gridMarkIncomplete {
+    border-bottom: red 1px dotted!important
+}
+
+.ICompactWeb .gridMarkIncomplete {
+    padding-top: 5px!important;
+    padding-bottom: 4px!important
+}
+
+.gridMarkIncomplete span {
+    width: 100%;
+    height: 100%
+}
+
+.gridHeader {
+    position: relative;
+    background-color: #f5f3df;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.ICompactWeb .gridHeader {
+    background-color: #f2f2f2
+}
+
+.gridHeaderCell {
+    padding: 0;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-right: 5px;
+    border-right: 1px solid #bfb999;
+    border-bottom: 1px solid #ccc6ad;
+    border-left: none;
+    border-top: none;
+    overflow: hidden;
+    position: absolute;
+    color: #594304
+}
+
+.ICompactWeb .gridHeaderCell {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0
+}
+
+.gridHeaderCellDIV {
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    color: #594304;
+    text-overflow: ellipsis
+}
+
+.ICompactWeb .gridHeaderCellDIV {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px #fff solid!important;
+    padding: .45em 1.13em .45em 1.13em!important;
+    color: #4d4d4d
+}
+
+.ICompactWeb .gridHeaderCellDIV {
+    padding-left: 2px!important;
+    padding-top: 3px!important;
+    padding-right: 2px!important;
+    padding-bottom: 0
+}
+
+.gridHeaderCellText {
+    padding: 0;
+    border: none;
+    overflow: hidden
+}
+
+.ICompactWeb .gridHeaderCellText {
+    text-overflow: ellipsis
+}
+
+.gridHeaderCellSort {
+    position: relative;
+    float: right;
+    left: 2px;
+    padding: 0;
+    padding-top: 1px;
+    overflow: visible;
+    width: 16px;
+    background-color: #f5f3df;
+    border: none;
+    color: #4d4d4d
+}
+
+.ICompactWeb .gridHeaderCellSort {
+    padding-top: 2px;
+    background-color: #f2f2f2
+}
+
+.gridHeaderCellSortImg {
+    width: 14px;
+    height: 14px;
+    margin-top: -1px
+}
+
+.gridHeaderCellSortZ {
+    position: relative;
+    float: right;
+    left: 2px;
+    padding: 0;
+    padding-top: 1px;
+    overflow: visible;
+    background-color: #f5f3df;
+    border: none;
+    color: #4d4d4d;
+    display: inline-block
+}
+
+.ICompactWeb .gridHeaderCellSortZ {
+    padding-top: 2px;
+    background-color: #f2f2f2
+}
+
+.gridHeaderCellSortImgZ {
+    margin-top: -1px
+}
+
+.grid-header-column-picture {
+    padding: 0;
+    float: left;
+    border: none;
+    top: -1px;
+    position: relative;
+    width: 16px;
+    overflow: hidden
+}
+
+.ICompactWeb .grid-header-column-picture {
+    margin-right: .3em
+}
+
+.grid-header-column-picture img {
+    vertical-align: middle
+}
+
+.gridColSort {
+    padding: 0 4px 0 0;
+    padding-top: 1px;
+    border: none;
+    background-color: #f5f3df;
+    position: absolute;
+    right: 0;
+    overflow: visible
+}
+
+.gridColSort img {
+    height: 14px;
+    margin-top: -1px;
+    width: 14px
+}
+
+.gridFooter {
+    position: absolute;
+    background-color: #f5f3df;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.ICompactWeb .gridFooter {
+    background-color: #f2f2f2
+}
+
+.gridFooterCell {
+    padding: 0;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-right: 5px;
+    border-right: 1px solid #bfb999;
+    border-top: 1px solid #ccc6ad;
+    border-left: none;
+    border-bottom: none;
+    overflow: hidden;
+    position: absolute;
+    color: #594304
+}
+
+.ICompactWeb .gridFooterCell {
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0
+}
+
+.gridFooter div img {
+    margin-right: 2px
+}
+
+.gridContent {
+    overflow: hidden;
+    outline: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.gridRow {
+    border: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+.gridRowOdd {
+    background-color: #fff
+}
+
+.gridRowEven {
+    background-color: #f5fbf7
+}
+
+.ICompactWeb .gridRowEven {
+    background-color: #fafafa
+}
+
+.gridCurrentRow .gridCellImage {
+    background-color: #c9e2ff!important
+}
+
+.ICompactWeb .gridCurrentRow .gridCellImage {
+    background-color: #fdf1a5!important
+}
+
+.gridCurrentCell .gridCellImage {
+    background-color: #536ac2!important
+}
+
+.ICompactWeb .gridCurrentCell .gridCellImage {
+    background-color: #fadb1f!important
+}
+
+.gridCurrentCell.hierarchicalGridCellFirst .gridCellImage {
+    background-color: #c9e2ff!important
+}
+
+.ICompactWeb .gridCurrentCell.hierarchicalGridCellFirst .gridCellImage {
+    background-color: #fadb1f!important
+}
+
+.emptyRow {
+    border-bottom: 1px solid #e0e0e0!important;
+    position: relative;
+    vertical-align: baseline
+}
+
+.noHorLines {
+    border-top: none!important;
+    border-bottom: none!important
+}
+
+.ICompactWeb .noHorLines,.ICompactWeb .noHorLines .gridCell,.noHorLines .gridCell {
+    border-top: none!important;
+    border-bottom: none!important;
+    border-right: 1px solid #fff!important
+}
+
+.ICompactWeb .noHorLinesLast .gridCell {
+    border-top: none!important;
+    border-bottom: none!important
+}
+
+.ICompactWeb .noHorLinesLast,.ICompactWeb .noHorLinesLast .gridCell {
+    border-right: 1px solid #fff!important
+}
+
+.noVerLines,.noVerLines .gridCell {
+    border-right: none!important;
+    border-left: none!important;
+    border-top: none!important
+}
+
+.noLines,.noLines .gridCell {
+    border-left: none!important;
+    border-top: none!important;
+    border-right: none!important;
+    border-bottom: none!important
+}
+
+.ICompactWeb .noLines .gridCell {
+    border-bottom: none!important
+}
+
+.gridCurrentRow {
+    background-color: #c9e2ff!important
+}
+
+.ICompactWeb .gridCurrentRow {
+    background-color: #fdf1a5!important
+}
+
+.gridCurrentCell {
+    background-color: #536ac2!important
+}
+
+.ICompactWeb .gridCurrentCell {
+    background-color: #fadb1f!important
+}
+
+.ICompactWeb .gridCellInt {
+    overflow: hidden;
+    border-bottom: none;
+    padding-left: 4px;
+    padding-top: 1px;
+    padding-right: 4px;
+    padding-bottom: 1px
+}
+
+.ICompactWeb .gridCellIntMst {
+    overflow: hidden;
+    border-bottom: none;
+    padding-left: 1.13em;
+    padding-top: 1px;
+    padding-right: 0;
+    padding-bottom: 1px
+}
+
+.ICompactWeb .gridCellIntBottom {
+    overflow: hidden;
+    padding-left: 4px;
+    padding-top: 1px;
+    padding-right: 4px;
+    padding-bottom: 1px
+}
+
+.ICompactWeb .gridCellIntBottomMst {
+    overflow: hidden;
+    padding-left: 1.13em;
+    padding-top: 1px;
+    padding-right: 0;
+    padding-bottom: 1px
+}
+
+.ICompactWeb .gridCellIntBottomSCT {
+    overflow: hidden;
+    padding-left: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px
+}
+
+.ICompactWeb .gridCurrentCellIntSCT {
+    overflow: hidden;
+    border-top: 1px solid #fff!important;
+    border-bottom: 1px solid #fff!important;
+    border-right: 1px solid #fff!important;
+    padding-left: 2px
+}
+
+.ICompactWeb .gridCurrentCellIntHM {
+    overflow: hidden;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff
+}
+
+.ICompactWeb .gridCellIntCurRow {
+    overflow: hidden;
+    padding-left: 4px;
+    padding-top: 0;
+    padding-right: 4px;
+    padding-bottom: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff
+}
+
+.ICompactWeb .gridCellIntCurRowT {
+    overflow: hidden;
+    padding-left: 4px;
+    padding-top: 0;
+    padding-right: 4px;
+    padding-bottom: 0;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff
+}
+
+.ICompactWeb .gridCellIntCurRowB {
+    overflow: hidden;
+    padding-left: 4px;
+    padding-top: 1px;
+    padding-right: 4px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff
+}
+
+.ICompactWeb .gridCellIntCurRowMst {
+    overflow: hidden;
+    padding-left: 1.13em;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff
+}
+
+.ICompactWeb .gridCellIntCurRowSCT {
+    overflow: hidden;
+    padding-left: 2px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff
+}
+
+.ICompactWeb .noHorLines .gridCellIntCurRow {
+    overflow: hidden;
+    padding-left: 1.13em;
+    padding-top: 0;
+    padding-right: 1.13em;
+    padding-bottom: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: none
+}
+
+.ICompactWeb .gridCurrentCellInt,.ICompactWeb .gridCurrentCellIntHM {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.gridOutFocus,.gridOutFocus .gridCellImage {
+    background-color: #6f98cf!important
+}
+
+.ICompactWeb .gridOutFocus,.ICompactWeb .gridOutFocus .gridCellImage,.ICompactWeb .gridOutFocusRow .gridOutFocus .gridCellImage {
+    background-color: #fdf1a5!important
+}
+
+.ICompactWeb .gridOutFocusRow,.ICompactWeb .gridOutFocusRow .gridCellImage {
+    background-color: #fef8d2!important
+}
+
+.gridCell {
+    padding-left: 4px;
+    padding-right: 5px;
+    border-right: 1px solid #b5cbe5;
+    border-bottom: 1px solid #b5cbe5;
+    border-left: none;
+    border-top: none;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    height: 100%
+}
+
+.ICompactWeb .gridCell {
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.hierarchicalGridCellFirst {
+    padding-left: 0!important;
+    padding-right: 9px!important
+}
+
+.ICompactWeb .hierarchicalGridCellFirst {
+    padding-left: 0!important;
+    padding-right: 0!important
+}
+
+.gridImageSpace {
+    width: 4px
+}
+
+.gridCellComp {
+    padding-left: 4px;
+    padding-right: 5px;
+    border-right: 1px solid #b5cbe5;
+    border-bottom: 1px solid #b5cbe5;
+    border-left: none;
+    border-top: none;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis
+}
+
+.ICompactWeb .gridCellComp {
+    border-right: none;
+    border-bottom: none;
+    padding: 0
+}
+
+.gridCellImage {
+    padding: 1px 3px 1px 0;
+    float: left;
+    border: 0!important;
+    position: static!important;
+    overflow: hidden
+}
+
+.ICompactWeb .gridCellImage {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 3px
+}
+
+.gridCellImageHM {
+    padding: 1px 3px 1px 0;
+    float: left;
+    border: 0!important;
+    position: static!important;
+    overflow: hidden
+}
+
+.ICompactWeb .gridCellImageHM {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 3px;
+    padding-left: 1.13em
+}
+
+.gridCellHText {
+    overflow: hidden
+}
+
+.gridCellText {
+    clear: right;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    overflow: hidden;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-overflow: ellipsis
+}
+
+.ICompactWeb .gridCellText {
+    padding-top: 2px;
+    padding-bottom: 0
+}
+
+.gridCellTextWK {
+    padding-top: 3px;
+    padding-bottom: 1px;
+    clear: right;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    overflow: hidden;
+    position: static!important;
+    height: 100%
+}
+
+.ICompactWeb .gridCellTextWK {
+    padding-top: 2px;
+    padding-bottom: 0
+}
+
+.gridCellTextFF {
+    clear: right;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: static!important
+}
+
+.gridCellTextSpanTFF {
+    padding-top: 3px;
+    padding-bottom: 1px;
+    height: 100%;
+    display: -moz-deck
+}
+
+.ICompactWeb .gridCellTextSpanTFF {
+    padding-top: 2px;
+    padding-bottom: 0
+}
+
+.gridCellTextSpanHLFF {
+    padding-top: 3px;
+    padding-bottom: 1px;
+    width: 100%;
+    height: 100%;
+    display: -moz-box
+}
+
+.ICompactWeb .gridCellTextSpanHLFF {
+    padding-top: 3px;
+    padding-bottom: 1px
+}
+
+.gridCellTextHM {
+    clear: right;
+    border-top: 1px solid transparent!important;
+    border-right: 1px solid transparent!important;
+    border-left: 1px solid transparent!important;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis
+}
+
+.ICompactWeb .gridCellTextHM {
+    padding-top: 2px;
+    padding-bottom: 0;
+    padding-left: 1.13em;
+}
+
+.gridImage {
+    width: 16px;
+    height: 16px
+}
+
+.gridImageIWeb {
+    overflow: hidden
+}
+
+.gridImageZ {
+    display: inline-block
+}
+
+.gridImagePlus {
+    width: 16px;
+    height: 17px;
+    margin-right: 0;
+    margin-left: 0
+}
+
+.gridImagePlus83 {
+    width: 13px;
+    height: 13px;
+    vertical-align: top;
+    margin-right: 3px;
+    margin-left: 0;
+    margin-top: 1px
+}
+
+.ICompactWeb .gridImagePlus83 {
+    margin-left: 5px;
+    margin-right: 7px
+}
+
+.gridHierListZ {
+    vertical-align: top;
+    margin-right: 3px;
+    margin-left: 0;
+    margin-top: 1px
+}
+
+.gridTreeImageZ {
+    display: inline-block;
+    vertical-align: top
+}
+
+.gridCheck {
+    width: 13px;
+    height: 13px;
+    margin-top: 2px
+}
+
+.gridColor {
+    border-color: DarkGray!important;
+    border-style: solid!important;
+    border-width: 1px!important;
+    float: left;
+    height: 13px;
+    margin-top: 2px;
+    margin-right: 1px;
+    position: static;
+    width: 16px
+}
