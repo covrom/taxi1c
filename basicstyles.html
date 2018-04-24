@@ -10,679 +10,676 @@
 </head>
 
 <body>
-    <!-- Заголовок -->
-    <div class="topline">
-        <div class="toplineCenter">
-            <div class="toplineBox">
-                <div class="toplineBoxTitle blank">
-                    <p>Заявка №001793</p>
+    <div style="position: relative; margin: 12px;">
+        <!-- Заголовок -->
+        <div class="topline">
+            <div class="toplineCenter">
+                <div class="toplineBox">
+                    <div class="toplineBoxTitle blank">
+                        <p>Заявка №001793</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Главное меню (переключение панелей разделов) -->
-    <div class="formNav2Area" style="left: 12px; top: 46px; width: 797px; height: 28px;">
-        <div class="pnContainer" style="top: 0px; height: 29px;">
-            <div class="secondaryPanelItem secondaryPanelItemActive" style="position:absolute;top:0px;width:59px;left:0px;" onmouseover="this.classList.add('itemLink_hover');"
-                onmouseout="this.classList.remove('itemLink_hover');">
-                <span class="cmdLink_noselect">Основное</span>
-            </div>
-            <div class="secondaryPanelItem" style="position:absolute;top:0px;width:116px;left:79px;" onmouseover="this.classList.add('itemLink_hover');"
-                onmouseout="this.classList.remove('itemLink_hover');">
-                <span class="cmdLink_noselect">История&nbsp;состояний</span>
-            </div>
-            <div class="secondaryPanelItem" style="position:absolute;top:0px;width:149px;left:215px;" onmouseover="this.classList.add('itemLink_hover');"
-                onmouseout="this.classList.remove('itemLink_hover');">
-                <span class="cmdLink_noselect">Присоединенные&nbsp;файлы</span>
-            </div>
-        </div>
-    </div>
-    <!-- Командная панель с кнопками и субменю -->
-    <div style="position: absolute; left: 0px; top: 84px; width: 821px; height: 819px;" class="ICompactWeb lfl">
-        <div style="position: absolute; left: 12px; top: 0px; width: 792px; height: 26px;">
-            <div tabindex="0" class="frameCommand">
-                <div class="command commandMore">
-                    <!-- Кнопка "Еще" -->
-                    <div class="commandRight">
-                        <i class="pressBefore pressBeforeMore"> </i>
-                        <span class="framePress">
-                            <a tabindex="1" class="press pressCommand pressMore">
-                                <span class="pressBox">Еще</span>
-                                <span class="pressDrop"></span>
-                                <i></i>
-                            </a>
-                        </span>
-                        <div class="cloud cloudBorder" style="display: none; position: absolute; overflow: hidden; z-index: 15002; outline: none;"
-                            tabindex="0">
-                            <div class="frameSubmenu" style="top: -1px;">
-                                <div class="submenu">
-                                    <div class="submenuBlock">
-                                        <div class="submenuName">
-                                            <span class="submenuIco" style="background-image: url(saveandclose.png);"></span>
-                                            <span class="submenuText">Записать и закрыть</span>
-                                        </div>
-                                        <div class="submenuTitle">Ctrl+Enter</div>
-                                    </div>
-                                    <div class="submenuBlock">
-                                        <div class="submenuName">
-                                            <span class="submenuIco" style="background-image: url(save.png);"></span>
-                                            <span class="submenuText">Записать</span>
-                                        </div>
-                                        <div class="submenuTitle">Ctrl+S</div>
-                                    </div>
-                                    <div class="submenuBlock">
-                                        <div class="submenuName">
-                                            <span class="submenuIco" style="background-image: url(reload.png);"></span>
-                                            <span class="submenuText">Перечитать</span>
-                                        </div>
-                                    </div>
-                                    <div class="submenuBlock">
-                                        <div class="submenuName">
-                                            <span class="submenuIco" style="background-image: url(help.png);"></span>
-                                            <span class="submenuText">Справка</span>
-                                        </div>
-                                        <div class="submenuTitle">F1</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <i></i>
-                    </div>
-                    <div class="pressMorePadding"></div>
-                    <!-- Основные кнопки -->
-                    <span class="commandSeparator">
-                        <i class="pressBefore"> </i>
-                        <span class="framePress" title="Записать и закрыть (Ctrl+Enter)">
-                            <a tabindex="1" class="press pressCommand pressDefault" style="font-weight: bold;">
-                                <span class="pressBox">Записать&nbsp;и&nbsp;закрыть</span>
-                                <i></i>
-                            </a>
-                        </span>
-                        <i class="pressBefore"> </i>
-                        <span class="framePress" title="Записать объект (Ctrl+S)">
-                            <a tabindex="1" class="press pressCommand">
-                                <span class="pressBox">Записать</span>
-                                <i></i>
-                            </a>
-                        </span>
-                        <i class="pressBefore"> </i>
-                        <span class="framePress" title="Отправить письмо">
-                            <a tabindex="1" class="press pressCommand">
-                                <span class="pressImg" style="background-image: url(email.png);"></span>
-                                <span class="pressBox">Отправить&nbsp;письмо</span>
-                                <i></i>
-                            </a>
-                        </span>
-                    </span>
+        <!-- Главное меню (переключение панелей разделов) -->
+        <div class="formNav2Area" style="left: 12px; top: 46px; width: 100%; height: 28px;">
+            <div class="pnContainer" style="top: 0px; height: 29px;">
+                <div class="secondaryPanelItem secondaryPanelItemActive" style="position:absolute;top:0px;width:59px;left:0px;" onmouseover="this.classList.add('itemLink_hover');"
+                    onmouseout="this.classList.remove('itemLink_hover');">
+                    <span class="cmdLink_noselect">Основное</span>
+                </div>
+                <div class="secondaryPanelItem" style="position:absolute;top:0px;width:116px;left:79px;" onmouseover="this.classList.add('itemLink_hover');"
+                    onmouseout="this.classList.remove('itemLink_hover');">
+                    <span class="cmdLink_noselect">История&nbsp;состояний</span>
+                </div>
+                <div class="secondaryPanelItem" style="position:absolute;top:0px;width:149px;left:215px;" onmouseover="this.classList.add('itemLink_hover');"
+                    onmouseout="this.classList.remove('itemLink_hover');">
+                    <span class="cmdLink_noselect">Присоединенные&nbsp;файлы</span>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Страница с элементами -->
-    <div style="position: absolute; overflow: hidden; left: 0px; top: 120px; width: 100%; height: 100%;" class="ICompactWeb">
-        <div style="position: absolute; overflow-y: auto; background-color: rgb(255, 255, 255); outline: none; left: 0px; top: 0px; width: 100%; height: 100%;"
-            scrollable="true" tabindex="0">
-
-            <!-- Общие элементы -->
-            <div style="position: absolute; overflow: hidden; left: 12px; top: 3px; width: 30px; height: 20px;">
-                <table class="staticTextTable">
-                    <tbody>
-                        <tr>
-                            <td style="vertical-align:middle; ">
-                                <div class="ellipsis">
-                                    <label>Тема:</label>
+        <!-- Командная панель с кнопками и субменю -->
+        <div style="position: absolute; left: 0px; top: 84px;" class="ICompactWeb lfl">
+            <div style="position: absolute; left: 12px; top: 0px; width: 792px; height: 26px;">
+                <div tabindex="0" class="frameCommand">
+                    <div class="command commandMore">
+                        <!-- Кнопка "Еще" -->
+                        <div class="commandRight">
+                            <i class="pressBefore pressBeforeMore"> </i>
+                            <span class="framePress">
+                                <a tabindex="1" class="press pressCommand pressMore">
+                                    <span class="pressBox">Еще</span>
+                                    <span class="pressDrop"></span>
+                                    <i></i>
+                                </a>
+                            </span>
+                            <div class="cloud cloudBorder" style="display: none; position: absolute;  z-index: 15002; outline: none;" tabindex="0">
+                                <div class="frameSubmenu" style="top: -1px;">
+                                    <div class="submenu">
+                                        <div class="submenuBlock">
+                                            <div class="submenuName">
+                                                <span class="submenuIco" style="background-image: url(saveandclose.png);"></span>
+                                                <span class="submenuText">Записать и закрыть</span>
+                                            </div>
+                                            <div class="submenuTitle">Ctrl+Enter</div>
+                                        </div>
+                                        <div class="submenuBlock">
+                                            <div class="submenuName">
+                                                <span class="submenuIco" style="background-image: url(save.png);"></span>
+                                                <span class="submenuText">Записать</span>
+                                            </div>
+                                            <div class="submenuTitle">Ctrl+S</div>
+                                        </div>
+                                        <div class="submenuBlock">
+                                            <div class="submenuName">
+                                                <span class="submenuIco" style="background-image: url(reload.png);"></span>
+                                                <span class="submenuText">Перечитать</span>
+                                            </div>
+                                        </div>
+                                        <div class="submenuBlock">
+                                            <div class="submenuName">
+                                                <span class="submenuIco" style="background-image: url(help.png);"></span>
+                                                <span class="submenuText">Справка</span>
+                                            </div>
+                                            <div class="submenuTitle">F1</div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="pressMorePadding"></div>
+                        <!-- Основные кнопки -->
+                        <span class="commandSeparator">
+                            <i class="pressBefore"> </i>
+                            <span class="framePress" title="Записать и закрыть (Ctrl+Enter)">
+                                <a tabindex="1" class="press pressCommand pressDefault" style="font-weight: bold;">
+                                    <span class="pressBox">Записать&nbsp;и&nbsp;закрыть</span>
+                                    <i></i>
+                                </a>
+                            </span>
+                            <i class="pressBefore"> </i>
+                            <span class="framePress" title="Записать объект (Ctrl+S)">
+                                <a tabindex="1" class="press pressCommand">
+                                    <span class="pressBox">Записать</span>
+                                    <i></i>
+                                </a>
+                            </span>
+                            <i class="pressBefore"> </i>
+                            <span class="framePress" title="Отправить письмо">
+                                <a tabindex="1" class="press pressCommand">
+                                    <span class="pressImg" style="background-image: url(email.png);"></span>
+                                    <span class="pressBox">Отправить&nbsp;письмо</span>
+                                    <i></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div style="position: absolute; overflow: hidden; left: 44px; top: 4px; width: 671px; height: 20px;">
-                <label class="field fieldOne">
-                    <div class="inlinesField">
-                        <div class="inlines"></div>
-                    </div>
-                    <div class="inputsField">
-                        <div class="inputs">
-                            <input type="text" class="editInput" spellcheck="false">
+        </div>
+        <!-- Страница с элементами -->
+        <div style="position: absolute; left: 0px; top: 120px; width: 100%; height: 100%;" class="ICompactWeb">
+            <div style="position: absolute; background-color: rgb(255, 255, 255); outline: none; left: 0px; top: 0px; width: 100%; height: 100%;"
+                scrollable="true" tabindex="0">
+
+                <!-- Общие элементы -->
+                <div style="position: absolute;  left: 12px; top: 3px; width: 30px; height: 20px;">
+                    <table class="staticTextTable">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align:middle; ">
+                                    <div class="ellipsis">
+                                        <label>Тема:</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="position: absolute;  left: 44px; top: 4px; width: 671px; height: 20px;">
+                    <label class="field fieldOne">
+                        <div class="inlinesField">
+                            <div class="inlines"></div>
                         </div>
-                    </div>
-                    <div class="btnsField">
-                        <div class="btns"></div>
-                    </div>
-                </label>
-            </div>
+                        <div class="inputsField">
+                            <div class="inputs">
+                                <input type="text" class="editInput" spellcheck="false">
+                            </div>
+                        </div>
+                        <div class="btnsField">
+                            <div class="btns"></div>
+                        </div>
+                    </label>
+                </div>
 
-            <!-- Страницы, которые можно переключать -->
-            <div style="position: absolute; overflow: hidden; left: 12px; top: 30px; width: 100%; height: 100%;">
+                <!-- Страницы, которые можно переключать -->
+                <div style="position: absolute; left: 12px; top: 30px; width: 100%; height: 100%; right:12px;">
 
-                <div id="form1_СтраницаОтслеживание_div" style="position: absolute; overflow: auto; background-color: rgb(255, 255, 255); outline: none; left: 0px; top: 0px; width: 100%; height: 100%;"
-                    scrollable="true" tabindex="0">
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 7px; width: 270px; height: 16px;" id="form1_ОдобреноЗаказчиком_text_div">
-                        <table class="staticTextTable" id="form1_ОдобреноЗаказчиком_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; " tabindex="0">
-                                        <div class="ellipsis" id="form1_ОдобреноЗаказчиком_text">
-                                            <label for="form1_ОдобреноЗаказчиком">Одобрено заказчиком:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 279px; top: 7px; width: 24px; height: 16px;" id="form1_ОдобреноЗаказчиком_div">
-                        <div class="checkbox" id="form1_ОдобреноЗаказчиком" tabindex="0" style="top: 0.5px;"></div>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 30px; width: 54px; height: 20px;" id="form1_СрокНачала_text_div">
-                        <table class="staticTextTable" id="form1_СрокНачала_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_СрокНачала_text">
-                                            <label for="form1_СрокНачала_i0">Начать с:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 63px; top: 31px; width: 96px; height: 20px;" id="form1_СрокНачала_div">
-                        <label id="form1_СрокНачала" class="field fieldNoBorder">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_СрокНачала_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iCB iCalendB" id="form1_СрокНачала_CB" title="Выбрать (F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 199px; top: 30px; width: 78px; height: 20px;" id="form1_Срок_text_div">
-                        <table class="staticTextTable" id="form1_Срок_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_Срок_text">
-                                            <label for="form1_Срок_i0">Выполнить до:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 279px; top: 31px; width: 96px; height: 20px;" id="form1_Срок_div">
-                        <label id="form1_Срок" class="field">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_Срок_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iCB iCalendB" id="form1_Срок_CB" title="Выбрать (F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 57px; width: 270px; height: 20px;" id="form1_ФактическоеВремяТехрешение_text_div">
-                        <table class="staticTextTable" id="form1_ФактическоеВремяТехрешение_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_ФактическоеВремяТехрешение_text">
-                                            <label for="form1_ФактическоеВремяТехрешение_i0">Фактическое время на написание техрешения (час):</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 279px; top: 58px; width: 64px; height: 20px;" id="form1_ФактическоеВремяТехрешение_div">
-                        <label id="form1_ФактическоеВремяТехрешение" class="field fieldAlignRight" title="0,0">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_ФактическоеВремяТехрешение_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iCB iCalcB" id="form1_ФактическоеВремяТехрешение_CB" title="Выбрать (F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 351px; top: 57px; width: 190px; height: 20px;" id="form1_ПлановоеВремя_text_div">
-                        <table class="staticTextTable" id="form1_ПлановоеВремя_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_ПлановоеВремя_text">
-                                            <label for="form1_ПлановоеВремя_i0">Плановое время на разработку (час):</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 543px; top: 58px; width: 64px; height: 20px;" id="form1_ПлановоеВремя_div">
-                        <label id="form1_ПлановоеВремя" title="Планируемое время на разработку без учета времени исправлений по замечаниям внутреннего и приемочного тестирований"
-                            class="field fieldAlignRight">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_ПлановоеВремя_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iCB iCalcB" id="form1_ПлановоеВремя_CB" title="Выбрать (F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 97px; width: 70px; height: 20px;" id="form1_Исполнитель_text_div">
-                        <table class="staticTextTable" id="form1_Исполнитель_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_Исполнитель_text">
-                                            <label for="form1_Исполнитель_i0">Исполнитель:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 79px; top: 98px; width: 200px; height: 20px;" id="form1_Исполнитель_div">
-                        <label id="form1_Исполнитель" class="field">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_Исполнитель_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iDLB" id="form1_Исполнитель_DLB" title="Выбрать из списка" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                    <span class="btn btnBox iCB" id="form1_Исполнитель_CB" title="Выбрать (F4)" tabindex="0" style="display: none;">
-                                        <i></i>
-                                    </span>
-                                    <span style="" class="btnBox btn iOB" id="form1_Исполнитель_OB" title="Открыть (Ctrl+Shift+F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 287px; top: 97px; width: 54px; height: 20px;" id="form1_Важность_text_div">
-                        <table class="staticTextTable" id="form1_Важность_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_Важность_text">
-                                            <label for="form1_Важность_i0">Важность:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 343px; top: 98px; width: 48px; height: 20px;" id="form1_Важность_div">
-                        <label id="form1_Важность" class="field fieldOne fieldAlignRight" title="0">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_Важность_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 399px; top: 97px; width: 208px; height: 20px;" id="form1_ПодписьВажность_div">
-                        <div class="staticText fullSize" id="form1_ПодписьВажность" tabindex="0" style="outline: none; white-space: normal; border-style: none; border-width: 0px;">
-                            <table class="staticTextTable">
+                    <div id="form1_СтраницаОтслеживание_div" style="position: absolute; background-color: rgb(255, 255, 255); outline: none; left: 0px; top: 0px; width: 100%; height: 100%;"
+                        scrollable="true" tabindex="0">
+                        <div style="position: absolute;   top: 7px; width: 270px; height: 16px;" id="form1_ОдобреноЗаказчиком_text_div">
+                            <table class="staticTextTable" id="form1_ОдобреноЗаказчиком_text_texttab">
                                 <tbody>
                                     <tr>
-                                        <td style="vertical-align:middle; ">
-                                            <div class="ellipsis" style="text-align: left;">
-                                                <span style="color: rgb(83, 106, 194);">(от 0 до 100, 100 - наивысшая важность)</span>
+                                        <td style="vertical-align:middle; " tabindex="0">
+                                            <div class="ellipsis" id="form1_ОдобреноЗаказчиком_text">
+                                                <label for="form1_ОдобреноЗаказчиком">Одобрено заказчиком:</label>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 137px; width: 62px; height: 20px;" id="form1_Состояние_text_div">
-                        <table class="staticTextTable" id="form1_Состояние_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_Состояние_text">
-                                            <label for="form1_Состояние_i0">Состояние:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 71px; top: 138px; width: 200px; height: 20px;" id="form1_Состояние_div">
-                        <label id="form1_Состояние" class="field">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_Состояние_i0" type="text" class="editInput" spellcheck="false">
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iDLB" id="form1_Состояние_DLB" title="Выбрать из списка" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                    <span style="" class="btnBox btn iOB" id="form1_Состояние_OB" title="Открыть (Ctrl+Shift+F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 279px; top: 137px; width: 70px; height: 20px;" id="form1_Прогресс_text_div">
-                        <table class="staticTextTable" id="form1_Прогресс_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_Прогресс_text">
-                                            <label for="form1_Прогресс">% прогресса:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 351px; top: 137px; width: 320px; height: 20px;" id="form1_Прогресс_div"
-                        class="frameTrackbar trackbarH">
-                        <div class="trackbar trackbarBot" id="form1_Прогресс" tabindex="0" style="outline: none;">
-                            <div class="trackbarMark" style="left: -5%; margin-left: 5%;">
-                                <span class="select"></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="trackbarTrack"></div>
-                            <div class="trackbarProgress" style="width: 0%;">
-                                <div class="trackbarSlider"></div>
-                            </div>
+                        <div style="position: absolute;  left: 279px; top: 7px; width: 24px; height: 16px;" id="form1_ОдобреноЗаказчиком_div">
+                            <div class="checkbox" id="form1_ОдобреноЗаказчиком" tabindex="0" style="top: 0.5px;"></div>
                         </div>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 679px; top: 137px; width: 24px; height: 20px;" id="form1_Прогресс1_div">
-                        <div class="staticText fullSize" id="form1_Прогресс1" tabindex="0" style="outline: none; white-space: nowrap; border-style: none; border-width: 0px;">
-                            <table class="staticTextTable">
+                        <div style="position: absolute;   top: 30px; width: 54px; height: 20px;" id="form1_СрокНачала_text_div">
+                            <table class="staticTextTable" id="form1_СрокНачала_text_texttab">
                                 <tbody>
                                     <tr>
                                         <td style="vertical-align:middle; ">
-                                            <div class="ellipsis" style="text-align: left;">
-                                                <span></span>
+                                            <div class="ellipsis" id="form1_СрокНачала_text">
+                                                <label for="form1_СрокНачала_i0">Начать с:</label>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 177px; width: 70px; height: 20px;" id="form1_ИСР_text_div">
-                        <table class="staticTextTable" id="form1_ИСР_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_ИСР_text">
-                                            <label for="form1_ИСР_i0">ИСР:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 79px; top: 178px; width: 200px; height: 20px;" id="form1_ИСР_div">
-                        <label id="form1_ИСР" class="field">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_ИСР_i0" type="text" class="editInput" spellcheck="false">
+                        <div style="position: absolute;  left: 63px; top: 31px; width: 96px; height: 20px;" id="form1_СрокНачала_div">
+                            <label id="form1_СрокНачала" class="field fieldNoBorder">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
                                 </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns">
-                                    <span style="" class="btnBox btn iDLB" id="form1_ИСР_DLB" title="Выбрать из списка" tabindex="0">
-                                        <i></i>
-                                    </span>
-                                    <span class="btn btnBox iCB" id="form1_ИСР_CB" title="Выбрать (F4)" tabindex="0" style="display: none;">
-                                        <i></i>
-                                    </span>
-                                    <span style="" class="btnBox btn iOB" id="form1_ИСР_OB" title="Открыть (Ctrl+Shift+F4)" tabindex="0">
-                                        <i></i>
-                                    </span>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_СрокНачала_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
                                 </div>
-                            </div>
-                        </label>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 287px; top: 177px; width: 160px; height: 20px;" id="form1_ИСРРодитель_div">
-                        <div class="staticText fullSize" id="form1_ИСРРодитель" tabindex="0" style="outline: none; white-space: nowrap; border-style: none; border-width: 0px;">
-                            <table class="staticTextTable">
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iCB iCalendB" id="form1_СрокНачала_CB" title="Выбрать (F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;  left: 199px; top: 30px; width: 78px; height: 20px;" id="form1_Срок_text_div">
+                            <table class="staticTextTable" id="form1_Срок_text_texttab">
                                 <tbody>
                                     <tr>
                                         <td style="vertical-align:middle; ">
-                                            <div class="ellipsis" style="text-align: left;">
-                                                <span>Разработка</span>
+                                            <div class="ellipsis" id="form1_Срок_text">
+                                                <label for="form1_Срок_i0">Выполнить до:</label>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 204px; width: 70px; height: 20px;" id="form1_ЗаКем_text_div">
-                        <table class="staticTextTable" id="form1_ЗаКем_text_texttab">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_ЗаКем_text">
-                                            <label for="form1_ЗаКем_i0">За кем:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="position: absolute; overflow: hidden; left: 79px; top: 205px; width: 407px; height: 20px;" id="form1_ЗаКем_div">
-                        <label id="form1_ЗаКем" title="От кого ожидается решение/исполнение/проверка при наличии проблем" class="field fieldOne">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <input id="form1_ЗаКем_i0" type="text" class="editInput" spellcheck="false">
+                        <div style="position: absolute;  left: 279px; top: 31px; width: 96px; height: 20px;" id="form1_Срок_div">
+                            <label id="form1_Срок" class="field">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
                                 </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns"></div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 233px; width: 100%; height: 16px;" id="form1_ТехническоеРешение_text_div">
-                        <table class="staticTextTable" id="form1_ТехническоеРешение_text_texttab" style="outline: none;">
-                            <tbody>
-                                <tr>
-                                    <td style="vertical-align:middle; ">
-                                        <div class="ellipsis" id="form1_ТехническоеРешение_text" style="font-weight: 700;">
-                                            <label for="form1_ТехническоеРешение_i0">Техническое решение:</label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 260px; width: 100%; height: 120px;" id="form1_ТехническоеРешение_div">
-                        <label id="form1_ТехническоеРешение" class="field fieldOne fieldMultiLine">
-                            <div class="inlinesField">
-                                <div class="inlines"></div>
-                            </div>
-                            <div class="inputsField">
-                                <div class="inputs">
-                                    <textarea id="form1_ТехническоеРешение_i0" class="editArea" rows="5" spellcheck="false" wrap="soft"></textarea>
-                                </div>
-                            </div>
-                            <div class="btnsField">
-                                <div class="btns"></div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div style="position: absolute; overflow: hidden; left: 7px; top: 388px; width: 100%; height: 100%;" id="form1_ЗаинтересованныеЛица_div"
-                        class="gridOutline">
-                        <div class="grid" id="form1_ЗаинтересованныеЛица">
-                            <div class="gridContainer" id="grid_form1_ЗаинтересованныеЛица" style="width: 100%; height: 100%;">
-                                <div class="gridHeader" style="height: 20px; width: 100%;">
-                                    <div class="gridHeaderCell" colindex="0" style="top: 0px;left: 0px;width: 77px;height:19px;">
-                                        <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">N</div>
-                                    </div>
-                                    <div class="gridHeaderCell" colindex="1" style="top: 0px;left: 78px;width: 242px;height:19px;">
-                                        <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">Контактное лицо</div>
-                                    </div>
-                                    <div class="gridHeaderCell" colindex="2" style="top: 0px;left: 321px;width: 122px;height:19px;">
-                                        <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">Рассылка</div>
-                                    </div>
-                                    <div class="gridHeaderCell" colindex="3" style="border-right: none !important;top: 0px;left: 444px;width: 222px;height:19px;">
-                                        <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">Примечание</div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_Срок_i0" type="text" class="editInput" spellcheck="false">
                                     </div>
                                 </div>
-                                <div class="gridContent" tabindex="0" title="" style="height: 100%; width: 100%;">
-                                    <div class="gridRow gridCurrentRow" rowindex="0" style="height:19px; width: 100%">
-                                        <div class="gridCell" colindex="0" style="position: absolute;top: 0px;height: 18px;width: 78px;left: 0px;white-space:normal;overflow:hidden;"
-                                            title="">
-                                            <div class="fullSize gridCellIntBottom gridCellIntCurRow">
-                                                <div class="gridCellText" style="white-space:nowrap;text-align:right;line-height:10pt;">1</div>
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iCB iCalendB" id="form1_Срок_CB" title="Выбрать (F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;   top: 57px; width: 270px; height: 20px;" id="form1_ФактическоеВремяТехрешение_text_div">
+                            <table class="staticTextTable" id="form1_ФактическоеВремяТехрешение_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_ФактическоеВремяТехрешение_text">
+                                                <label for="form1_ФактическоеВремяТехрешение_i0">Фактическое время на написание техрешения (час):</label>
                                             </div>
-                                        </div>
-                                        <div class="gridCell gridCurrentCell" colindex="1" style="position: absolute;top: 0px;height: 18px;width: 243px;left: 78px;white-space:normal;overflow:hidden;"
-                                            title="">
-                                            <div class="fullSize gridCellIntBottom gridCellIntCurRow">
-                                                <div class="gridCellText" style="white-space:nowrap;text-align:left;line-height:10pt;"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 279px; top: 58px; width: 64px; height: 20px;" id="form1_ФактическоеВремяТехрешение_div">
+                            <label id="form1_ФактическоеВремяТехрешение" class="field fieldAlignRight" title="0,0">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_ФактическоеВремяТехрешение_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iCB iCalcB" id="form1_ФактическоеВремяТехрешение_CB" title="Выбрать (F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;  left: 351px; top: 57px; width: 190px; height: 20px;" id="form1_ПлановоеВремя_text_div">
+                            <table class="staticTextTable" id="form1_ПлановоеВремя_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_ПлановоеВремя_text">
+                                                <label for="form1_ПлановоеВремя_i0">Плановое время на разработку (час):</label>
                                             </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 543px; top: 58px; width: 64px; height: 20px;" id="form1_ПлановоеВремя_div">
+                            <label id="form1_ПлановоеВремя" title="Планируемое время на разработку без учета времени исправлений по замечаниям внутреннего и приемочного тестирований"
+                                class="field fieldAlignRight">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_ПлановоеВремя_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iCB iCalcB" id="form1_ПлановоеВремя_CB" title="Выбрать (F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;   top: 97px; width: 70px; height: 20px;" id="form1_Исполнитель_text_div">
+                            <table class="staticTextTable" id="form1_Исполнитель_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_Исполнитель_text">
+                                                <label for="form1_Исполнитель_i0">Исполнитель:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 79px; top: 98px; width: 200px; height: 20px;" id="form1_Исполнитель_div">
+                            <label id="form1_Исполнитель" class="field">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_Исполнитель_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iDLB" id="form1_Исполнитель_DLB" title="Выбрать из списка" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                        <span class="btn btnBox iCB" id="form1_Исполнитель_CB" title="Выбрать (F4)" tabindex="0" style="display: none;">
+                                            <i></i>
+                                        </span>
+                                        <span style="" class="btnBox btn iOB" id="form1_Исполнитель_OB" title="Открыть (Ctrl+Shift+F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;  left: 287px; top: 97px; width: 54px; height: 20px;" id="form1_Важность_text_div">
+                            <table class="staticTextTable" id="form1_Важность_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_Важность_text">
+                                                <label for="form1_Важность_i0">Важность:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 343px; top: 98px; width: 48px; height: 20px;" id="form1_Важность_div">
+                            <label id="form1_Важность" class="field fieldOne fieldAlignRight" title="0">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_Важность_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;  left: 399px; top: 97px; width: 208px; height: 20px;" id="form1_ПодписьВажность_div">
+                            <div class="staticText fullSize" id="form1_ПодписьВажность" tabindex="0" style="outline: none; white-space: normal; border-style: none; border-width: 0px;">
+                                <table class="staticTextTable">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:middle; ">
+                                                <div class="ellipsis" style="text-align: left;">
+                                                    <span style="color: rgb(83, 106, 194);">(от 0 до 100, 100 - наивысшая важность)</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="position: absolute;   top: 137px; width: 62px; height: 20px;" id="form1_Состояние_text_div">
+                            <table class="staticTextTable" id="form1_Состояние_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_Состояние_text">
+                                                <label for="form1_Состояние_i0">Состояние:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 71px; top: 138px; width: 200px; height: 20px;" id="form1_Состояние_div">
+                            <label id="form1_Состояние" class="field">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_Состояние_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iDLB" id="form1_Состояние_DLB" title="Выбрать из списка" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                        <span style="" class="btnBox btn iOB" id="form1_Состояние_OB" title="Открыть (Ctrl+Shift+F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;  left: 279px; top: 137px; width: 70px; height: 20px;" id="form1_Прогресс_text_div">
+                            <table class="staticTextTable" id="form1_Прогресс_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_Прогресс_text">
+                                                <label for="form1_Прогресс">% прогресса:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 351px; top: 137px; width: 320px; height: 20px;" id="form1_Прогресс_div" class="frameTrackbar trackbarH">
+                            <div class="trackbar trackbarBot" id="form1_Прогресс" tabindex="0" style="outline: none;">
+                                <div class="trackbarMark" style="left: -5%; margin-left: 5%;">
+                                    <span class="select"></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="trackbarTrack"></div>
+                                <div class="trackbarProgress" style="width: 0%;">
+                                    <div class="trackbarSlider"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: absolute;  left: 679px; top: 137px; width: 24px; height: 20px;" id="form1_Прогресс1_div">
+                            <div class="staticText fullSize" id="form1_Прогресс1" tabindex="0" style="outline: none; white-space: nowrap; border-style: none; border-width: 0px;">
+                                <table class="staticTextTable">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:middle; ">
+                                                <div class="ellipsis" style="text-align: left;">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="position: absolute;   top: 177px; width: 70px; height: 20px;" id="form1_ИСР_text_div">
+                            <table class="staticTextTable" id="form1_ИСР_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_ИСР_text">
+                                                <label for="form1_ИСР_i0">ИСР:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 79px; top: 178px; width: 200px; height: 20px;" id="form1_ИСР_div">
+                            <label id="form1_ИСР" class="field">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_ИСР_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns">
+                                        <span style="" class="btnBox btn iDLB" id="form1_ИСР_DLB" title="Выбрать из списка" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                        <span class="btn btnBox iCB" id="form1_ИСР_CB" title="Выбрать (F4)" tabindex="0" style="display: none;">
+                                            <i></i>
+                                        </span>
+                                        <span style="" class="btnBox btn iOB" id="form1_ИСР_OB" title="Открыть (Ctrl+Shift+F4)" tabindex="0">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div style="position: absolute;  left: 287px; top: 177px; width: 160px; height: 20px;" id="form1_ИСРРодитель_div">
+                            <div class="staticText fullSize" id="form1_ИСРРодитель" tabindex="0" style="outline: none; white-space: nowrap; border-style: none; border-width: 0px;">
+                                <table class="staticTextTable">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:middle; ">
+                                                <div class="ellipsis" style="text-align: left;">
+                                                    <span>Разработка</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="position: absolute;   top: 204px; width: 70px; height: 20px;" id="form1_ЗаКем_text_div">
+                            <table class="staticTextTable" id="form1_ЗаКем_text_texttab">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_ЗаКем_text">
+                                                <label for="form1_ЗаКем_i0">За кем:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="position: absolute;  left: 79px; top: 205px; width: 407px; height: 20px;" id="form1_ЗаКем_div">
+                            <label id="form1_ЗаКем" title="От кого ожидается решение/исполнение/проверка при наличии проблем" class="field fieldOne">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <input id="form1_ЗаКем_i0" type="text" class="editInput" spellcheck="false">
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns"></div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div style="position: absolute;   top: 233px; width: 100%; height: 16px;" id="form1_ТехническоеРешение_text_div">
+                            <table class="staticTextTable" id="form1_ТехническоеРешение_text_texttab" style="outline: none;">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:middle; ">
+                                            <div class="ellipsis" id="form1_ТехническоеРешение_text" style="font-weight: 700;">
+                                                <label for="form1_ТехническоеРешение_i0">Техническое решение:</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div style="position: absolute;   top: 260px; width: 100%; height: 120px;" id="form1_ТехническоеРешение_div">
+                            <label id="form1_ТехническоеРешение" class="field fieldOne fieldMultiLine">
+                                <div class="inlinesField">
+                                    <div class="inlines"></div>
+                                </div>
+                                <div class="inputsField">
+                                    <div class="inputs">
+                                        <textarea id="form1_ТехническоеРешение_i0" class="editArea" rows="5" spellcheck="false" wrap="soft"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btnsField">
+                                    <div class="btns"></div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div style="position: absolute;   top: 388px; width: 100%; height: 100%;" id="form1_ЗаинтересованныеЛица_div" class="gridOutline">
+                            <div class="grid" id="form1_ЗаинтересованныеЛица">
+                                <div class="gridContainer" id="grid_form1_ЗаинтересованныеЛица" style="width: 100%; height: 100%;">
+                                    <div class="gridHeader" style="height: 20px; width: 100%;">
+                                        <div class="gridHeaderCell" colindex="0" style="top: 0px;left: 0px;width: 77px;height:19px;">
+                                            <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">N</div>
                                         </div>
-                                        <div class="gridCell" colindex="2" style="position: absolute;top: 0px;height: 18px;width: 123px;left: 321px;white-space:normal;overflow:hidden;">
-                                            <div class="fullSize gridCellIntBottom gridCellIntCurRow">
-                                                <div class="gridCellImage">
-                                                    <img ondragstart="return false" src="check_empty.png"
-                                                        check="true">
+                                        <div class="gridHeaderCell" colindex="1" style="top: 0px;left: 78px;width: 242px;height:19px;">
+                                            <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">Контактное лицо</div>
+                                        </div>
+                                        <div class="gridHeaderCell" colindex="2" style="top: 0px;left: 321px;width: 122px;height:19px;">
+                                            <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">Рассылка</div>
+                                        </div>
+                                        <div class="gridHeaderCell" colindex="3" style="border-right: none !important;top: 0px;left: 444px;width: 222px;height:19px;">
+                                            <div class="gridHeaderCellDIV" style="padding-left:16px;text-align:Left;white-space:nowrap;">Примечание</div>
+                                        </div>
+                                    </div>
+                                    <div class="gridContent" tabindex="0" title="" style="height: 100%; width: 100%;">
+                                        <div class="gridRow gridCurrentRow" rowindex="0" style="height:19px; width: 100%">
+                                            <div class="gridCell" colindex="0" style="position: absolute;top: 0px;height: 18px;width: 78px;left: 0px;white-space:normal;overflow:hidden;"
+                                                title="">
+                                                <div class="fullSize gridCellIntBottom gridCellIntCurRow">
+                                                    <div class="gridCellText" style="white-space:nowrap;text-align:right;line-height:10pt;">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="gridCell gridCurrentCell" colindex="1" style="position: absolute;top: 0px;height: 18px;width: 243px;left: 78px;white-space:normal;overflow:hidden;"
+                                                title="">
+                                                <div class="fullSize gridCellIntBottom gridCellIntCurRow">
+                                                    <div class="gridCellText" style="white-space:nowrap;text-align:left;line-height:10pt;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gridCell" colindex="2" style="position: absolute;top: 0px;height: 18px;width: 123px;left: 321px;white-space:normal;overflow:hidden;">
+                                                <div class="fullSize gridCellIntBottom gridCellIntCurRow">
+                                                    <div class="gridCellImage">
+                                                        <img ondragstart="return false" src="check_empty.png" check="true">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gridCell" colindex="3" style="border-right: none !important;position: absolute;top: 0px;height: 18px;width: 223px;left: 444px;white-space:normal;overflow:hidden;"
+                                                title="">
+                                                <div class="fullSize gridCellIntBottom gridCellIntCurRow">
+                                                    <div class="gridCellText" style="white-space:nowrap;text-align:left;line-height:10pt;"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="gridCell" colindex="3" style="border-right: none !important;position: absolute;top: 0px;height: 18px;width: 223px;left: 444px;white-space:normal;overflow:hidden;"
-                                            title="">
-                                            <div class="fullSize gridCellIntBottom gridCellIntCurRow">
-                                                <div class="gridCellText" style="white-space:nowrap;text-align:left;line-height:10pt;"></div>
+                                    </div>
+                                    <label id="form1_ЗаинтересованныеЛицаКонтактноеЛицо" style="outline: none; left: 79px; width: 242px; top: 20px; height: 18px;"
+                                        class="field fieldHidden">
+                                        <div class="inlinesField">
+                                            <div class="inlines"></div>
+                                        </div>
+                                        <div class="inputsField">
+                                            <div class="inputs">
+                                                <span class="inputHint" data-content="" style="height: 100%;"></span>
+                                                <input id="form1_ЗаинтересованныеЛицаКонтактноеЛицо_i0" type="text" class="editInput" spellcheck="false">
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="btnsField">
+                                            <div class="btns">
+                                                <span class="btn btnBox iCB" id="form1_ЗаинтересованныеЛицаКонтактноеЛицо_CB" title="Выбрать (F4)" tabindex="0">
+                                                    <i></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label id="form1_ЗаинтересованныеЛицаПримечание" style="display: none; outline: none;" class="field fieldOne fieldHidden">
+                                        <div class="inlinesField">
+                                            <div class="inlines"></div>
+                                        </div>
+                                        <div class="inputsField">
+                                            <div class="inputs">
+                                                <input id="form1_ЗаинтересованныеЛицаПримечание_i0" type="text" class="editInput" spellcheck="false">
+                                            </div>
+                                        </div>
+                                        <div class="btnsField">
+                                            <div class="btns"></div>
+                                        </div>
+                                    </label>
                                 </div>
-                                <label id="form1_ЗаинтересованныеЛицаКонтактноеЛицо" style="outline: none; left: 79px; width: 242px; top: 20px; height: 18px;"
-                                    class="field fieldHidden">
-                                    <div class="inlinesField">
-                                        <div class="inlines"></div>
-                                    </div>
-                                    <div class="inputsField">
-                                        <div class="inputs">
-                                            <span class="inputHint" data-content="" style="height: 100%;"></span>
-                                            <input id="form1_ЗаинтересованныеЛицаКонтактноеЛицо_i0" type="text" class="editInput" spellcheck="false">
-                                        </div>
-                                    </div>
-                                    <div class="btnsField">
-                                        <div class="btns">
-                                            <span class="btn btnBox iCB" id="form1_ЗаинтересованныеЛицаКонтактноеЛицо_CB" title="Выбрать (F4)" tabindex="0">
-                                                <i></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <label id="form1_ЗаинтересованныеЛицаПримечание" style="display: none; outline: none;" class="field fieldOne fieldHidden">
-                                    <div class="inlinesField">
-                                        <div class="inlines"></div>
-                                    </div>
-                                    <div class="inputsField">
-                                        <div class="inputs">
-                                            <input id="form1_ЗаинтересованныеЛицаПримечание_i0" type="text" class="editInput" spellcheck="false">
-                                        </div>
-                                    </div>
-                                    <div class="btnsField">
-                                        <div class="btns"></div>
-                                    </div>
-                                </label>
+
+
                             </div>
 
 
                         </div>
-
-
                     </div>
-
 
                     <div id="form1_СтраницаОтвет_div" style="position: absolute; overflow: auto; display: none; background-color: rgb(255, 255, 255); outline: none; left: 0px; top: 0px; width: 441px; height: 733px;"
                         scrollable="true" tabindex="0">
-                        <div style="position: absolute; overflow: hidden;" id="form1_Комментарий_div">
+                        <div style="position: absolute; " id="form1_Комментарий_div">
                             <label id="form1_Комментарий" class="field fieldOne fieldMultiLine">
                                 <div class="inlinesField">
                                     <div class="inlines"></div>
@@ -700,13 +697,9 @@
                     </div>
 
                     <div class="preloader" style="display: none;"></div>
-                </div>
-                <div class="tabsScroll" style="display: none;">
-                    <span class="tabsScrollUp"></span>
-                    <span class="tabsScrollDown"></span>
+
                 </div>
             </div>
-
         </div>
 </body>
 
