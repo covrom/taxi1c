@@ -1,0 +1,1 @@
+node-sass --output-style compressed skeleton.scss > skeleton.css
