@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Базовые стили 1с</title>
+    <link rel="stylesheet" type="text/css" href="skeleton.css">
+    <style>
+        .container {
+            max-width: 800px;
+        }
+
+        .header {
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        .value-prop {
+            margin-top: 1rem;
+        }
+
+        .value-props {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .docs-header {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            letter-spacing: .2rem;
+            font-weight: 600;
+        }
+
+        .docs-section {
+            border-top: 1px solid #eee;
+            padding: 4rem 0;
+            margin-bottom: 0;
+        }
+
+        .value-img {
+            display: block;
+            text-align: center;
+            margin: 2.5rem auto 0;
+        }
+
+        .example-grid .column,
+        .example-grid .columns {
+            background: #EEE;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: .75rem;
+            font-weight: 600;
+            letter-spacing: .1rem;
+        }
+
+        .docs-example .row,
+        .docs-example.row,
+        .docs-example form {
+            margin-bottom: 0;
+        }
+
+        .docs-example h1,
+        .docs-example h2,
+        .docs-example h3,
+        .docs-example h4,
+        .docs-example h5,
+        .docs-example h6 {
+            margin-bottom: 1rem;
+        }
+
+        .heading-font-size {
+            font-size: 1.2rem;
+            color: #999;
+            letter-spacing: normal;
+        }
+
+        .code-example {
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .code-example-body {
+            white-space: pre;
+            word-wrap: break-word
+        }
+
+        .example {
+            position: relative;
+            margin-top: 4rem;
+        }
+
+        .example-header {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        .example-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .example-screenshot-wrapper {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            height: 250px;
+        }
+
+        .example-screenshot {
+            width: 100%;
+            height: auto;
+        }
+
+        .example-screenshot.coming-soon {
+            width: auto;
+            position: absolute;
+            background: #eee;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        /* Larger than phone */
+
+        @media (min-width: 550px) {
+            .header {
+                margin-top: 18rem;
+            }
+            .value-props {
+                margin-top: 9rem;
+                margin-bottom: 7rem;
+            }
+            .value-img {
+                margin-bottom: 1rem;
+            }
+            .example-grid .column,
+            .example-grid .columns {
+                margin-bottom: 1.5rem;
+            }
+            .docs-section {
+                padding: 6rem 0;
+            }
+            .example-send-yourself-copy {
+                float: right;
+                margin-top: 12px;
+            }
+            .example-screenshot-wrapper {
+                position: absolute;
+                width: 48%;
+                height: 100%;
+                left: 0;
+                max-height: none;
+            }
+        }
+
+        /* Larger than tablet */
+
+        @media (min-width: 750px) {
+            /* Navbar */
+            .navbar+.docs-section {
+                border-top-width: 0;
+            }
+            .navbar,
+            .navbar-spacer {
+                display: block;
+                width: 100%;
+                height: 6.5rem;
+                background: #fff;
+                z-index: 99;
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+            }
+            .navbar-spacer {
+                display: none;
+            }
+            .navbar>.container {
+                width: 100%;
+            }
+            .navbar-list {
+                list-style: none;
+                margin-bottom: 0;
+            }
+            .navbar-item {
+                position: relative;
+                float: left;
+                margin-bottom: 0;
+            }
+            .navbar-link {
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: .2rem;
+                margin-right: 35px;
+                text-decoration: none;
+                line-height: 6.5rem;
+                color: #222;
+            }
+            .navbar-link.active {
+                color: #33C3F0;
+            }
+            .has-docked-nav .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .has-docked-nav .navbar-spacer {
+                display: block;
+            }
+            /* Re-overiding the width 100% declaration to match size of % based container */
+            .has-docked-nav .navbar>.container {
+                width: 80%;
+            }
+
+            /* Popover */
+            .popover.open {
+                display: block;
+            }
+            .popover {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #fff;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                top: 92%;
+                left: -50%;
+                -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+                -moz-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+                filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+            }
+            .popover-item:first-child .popover-link:after,
+            .popover-item:first-child .popover-link:before {
+                bottom: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+            .popover-item:first-child .popover-link:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #fff;
+                border-width: 10px;
+                margin-left: -10px;
+            }
+            .popover-item:first-child .popover-link:before {
+                border-color: rgba(238, 238, 238, 0);
+                border-bottom-color: #eee;
+                border-width: 11px;
+                margin-left: -11px;
+            }
+            .popover-list {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .popover-item {
+                padding: 0;
+                margin: 0;
+            }
+            .popover-link {
+                position: relative;
+                color: #222;
+                display: block;
+                padding: 8px 20px;
+                border-bottom: 1px solid #eee;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.0rem;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: .1rem;
+            }
+            .popover-item:first-child .popover-link {
+                border-radius: 4px 4px 0 0;
+            }
+            .popover-item:last-child .popover-link {
+                border-radius: 0 0 4px 4px;
+                border-bottom-width: 0;
+            }
+            .popover-link:hover {
+                color: #fff;
+                background: #33C3F0;
+            }
+            .popover-link:hover,
+            .popover-item:first-child .popover-link:hover:after {
+                border-bottom-color: #33C3F0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Grid -->
+        <div class="docs-section" id="grid">
+            <h6 class="docs-header">The grid</h6>
+            <p>The grid is a
+                <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes.
+                The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is
+                simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+            <div class="example-grid docs-example">
+                <div class="row">
+                    <div class="one column">One</div>
+                    <div class="eleven columns">Eleven</div>
+                </div>
+                <div class="row">
+                    <div class="two columns">Two</div>
+                    <div class="ten columns">Ten</div>
+                </div>
+                <div class="row">
+                    <div class="three columns">Three</div>
+                    <div class="nine columns">Nine</div>
+                </div>
+                <div class="row">
+                    <div class="four columns">Four</div>
+                    <div class="eight columns">Eight</div>
+                </div>
+                <div class="row">
+                    <div class="five columns">Five</div>
+                    <div class="seven columns">Seven</div>
+                </div>
+                <div class="row">
+                    <div class="six columns">Six</div>
+                    <div class="six columns">Six</div>
+                </div>
+                <div class="row">
+                    <div class="seven columns">Seven</div>
+                    <div class="five columns">Five</div>
+                </div>
+                <div class="row">
+                    <div class="eight columns">Eight</div>
+                    <div class="four  columns">Four</div>
+                </div>
+                <div class="row">
+                    <div class="nine columns">Nine</div>
+                    <div class="three columns">Three</div>
+                </div>
+                <div class="row">
+                    <div class="ten columns">Ten</div>
+                    <div class="two columns">Two</div>
+                </div>
+                <div class="row">
+                    <div class="eleven columns">Eleven</div>
+                    <div class="one column">One</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="docs-section" id="typography">
+            <h6 class="docs-header">Typography</h6>
+            <p>Type is all set with the
+                <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single
+                <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the
+                <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though
+                so, an
+                <code>&lt;h1&gt;</code> with
+                <code>5.0rem</code>font-size just means
+                <code>50px</code>.</p>
+            <div class="docs-example">
+                <div class="row">
+                    <div class="six columns">
+                        <p>
+                            <strong>The typography base</strong> is
+                            <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics
+                            like
+                            <a href="#">anchors</a>,
+                            <strong>strong</strong>,
+                            <em>emphasis</em>, and
+                            <u>underline</u> are all obviously included.</p>
+                        <p>
+                            <strong>Headings</strong> create a family of distinct sizes each with specific
+                            <code>letter-spacing</code>,
+                            <code>line-height</code>, and
+                            <code>margins</code>.</p>
+                    </div>
+                    <div class="six columns">
+                        <h1>Heading
+                            <span class="heading-font-size">
+                                <code>&lt;h1&gt;</code> 50rem</span>
+                        </h1>
+                        <h2>Heading
+                            <span class="heading-font-size">
+                                <code>&lt;h2&gt;</code> 42rem</span>
+                        </h2>
+                        <h3>Heading
+                            <span class="heading-font-size">
+                                <code>&lt;h3&gt;</code> 36rem</span>
+                        </h3>
+                        <h4>Heading
+                            <span class="heading-font-size">
+                                <code>&lt;h4&gt;</code> 30rem</span>
+                        </h4>
+                        <h5>Heading
+                            <span class="heading-font-size">
+                                <code>&lt;h5&gt;</code> 24rem</span>
+                        </h5>
+                        <h6>Heading
+                            <span class="heading-font-size">
+                                <code>&lt;h6&gt;</code> 15rem</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="docs-section" id="buttons">
+            <h6 class="docs-header">Buttons</h6>
+            <p>Buttons come in two basic flavors in Skeleton. The standard
+                <code>&lt;button&gt;</code> element is plain, whereas the
+                <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but
+                can also be arbitrarily attached to anchors with a
+                <code>.button</code> class.</p>
+            <div class="docs-example">
+                <div>
+                    <a class="button" href="#">Anchor button</a>
+                    <button>Button element</button>
+                    <input type="submit" value="submit input">
+                    <input type="button" value="button input">
+                </div>
+                <div>
+                    <a class="button button-primary" href="#">Anchor button</a>
+                    <button class="button-primary">Button element</button>
+                    <input class="button-primary" type="submit" value="submit input">
+                    <input class="button-primary" type="button" value="button input">
+                </div>
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="docs-section" id="forms">
+            <h6 class="docs-header">Forms</h6>
+            <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized
+                for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
+            <div class="docs-example docs-example-forms">
+                <form>
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="exampleEmailInput">Your email</label>
+                            <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                        </div>
+                        <div class="six columns">
+                            <label for="exampleRecipientInput">Reason for contacting</label>
+                            <select class="u-full-width" id="exampleRecipientInput">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Admiration</option>
+                                <option value="Option 3">Can I get your number?</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
+                    <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                    <input class="button-primary" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- Lists -->
+        <div class="docs-section" id="lists">
+            <h6 class="docs-header">Lists</h6>
+            <div class="row docs-example">
+                <div class="six columns">
+                    <ul>
+                        <li>Unordered lists have basic styles</li>
+                        <li>
+                            They use the circle list style
+                            <ul>
+                                <li>Nested lists styled to feel right</li>
+                                <li>Can nest either type of list into the other</li>
+                            </ul>
+                        </li>
+                        <li>Just more list items mama san</li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <ol>
+                        <li>Ordered lists also have basic styles</li>
+                        <li>
+                            They use the decimal list style
+                            <ul>
+                                <li>Ordered and unordered can be nested</li>
+                                <li>Can nest either type of list into the other</li>
+                            </ul>
+                        </li>
+                        <li>Last list item just for the fun</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code -->
+        <div class="docs-section" id="code">
+            <h6 class="docs-header">Code</h6>
+            <p>Code styling is kept basic – just wrap anything in a
+                <code>&lt;code&gt;</code> and it will appear like
+                <code>this</code>. For blocks of code, wrap a
+                <code>&lt;code&gt;</code> with a
+                <code>&lt;pre&gt;</code>.</p>
+            <div class="docs-example">
+                <pre><code>.some-class {
+        background-color: red;
+      }</code></pre>
+            </div>
+
+        </div>
+
+        <!-- Tables -->
+        <div class="docs-section" id="tables">
+            <h6 class="docs-header">Tables</h6>
+            <p>Be sure to use properly formed table markup with
+                <code>&lt;thead&gt;</code> and
+                <code>&lt;tbody&gt;</code> when building a
+                <code>table</code>.</p>
+            <div class="docs-example">
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dave Gamache</td>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>San Francisco</td>
+                        </tr>
+                        <tr>
+                            <td>Dwayne Johnson</td>
+                            <td>42</td>
+                            <td>Male</td>
+                            <td>Hayward</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- Queries -->
+        <div class="docs-section" id="queries">
+            <h6 class="docs-header">Media queries</h6>
+            <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling
+                your site across devices. The queries are mobile-first, meaning they target
+                <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS.
+                It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement.
+                This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+            <div class="docs-example row">
+                <div class="six columns">
+                    <ul>
+                        <li>
+                            <strong>Desktop HD</strong>: 1200px</li>
+                        <li>
+                            <strong>Desktop</strong>: 1000px</li>
+                        <li>
+                            <strong>Tablet</strong>: 750px</li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <ul>
+                        <li>
+                            <strong>Phablet</strong>: 550px</li>
+                        <li>
+                            <strong>Mobile</strong>: 400px</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Utilities and Misc. -->
+        <div class="docs-section" id="utilities">
+            <h6 class="docs-header">Utilities</h6>
+            <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use
+                a utility class than create a whole new class just to float an element.</p>
+
+
+            <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+            <pre class="code-example">
+      <code class="code-example-body prettyprint">/* Utility Classes */
+      
+      /* Make element full width */
+      .u-full-width {
+        width: 100%;
+        box-sizing: border-box; }
+      
+      /* Make sure elements don't run outside containers (great for images in columns) */
+      .u-max-full-width {
+        max-width: 100%;
+        box-sizing: border-box; }
+      
+      /* Float either direction */
+      .u-pull-right {
+        float: right; }
+      .u-pull-left {
+        float: left; }
+      
+      /* Clear a float */
+      .u-cf {
+        content: "";
+        display: table;
+        clear: both; }
+      </code>
+      </pre>
+            <!-- ————————————————————————————————————————————————————— -->
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
