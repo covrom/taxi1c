@@ -10,13 +10,18 @@ input[type='url'],
 input[type='password'],
 textarea,
 select {
-  height: 38px;
+  color: $font-color;
+  height: $control-height;
   padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
-  border: 1px solid lighten($border-color, 8.8%);
+  border: 1px solid $border-color;
   border-radius: $global-radius;
   box-shadow: none;
   box-sizing: border-box;
+}
+
+select {
+  padding: 0px 10px;
 }
 
 // Removes awkward default styles on some inputs for iOS
@@ -66,7 +71,7 @@ label,
 legend {
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600;
+  // font-weight: 600;
 }
 
 fieldset {
@@ -85,4 +90,17 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: lighten($font-color, 40%);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: lighten($font-color, 40%);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: lighten($font-color, 40%);
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: lighten($font-color, 40%);
 }

@@ -114,3 +114,19 @@
   display: table;
   clear: both;
 }
+
+.grayback .column,
+.grayback .columns {
+            background: #EEE;
+            // text-align: center;
+            border-radius: 4px;
+            // font-size: 1rem;
+            // text-transform: uppercase;
+            // height: 30px;
+            // line-height: 30px;
+            margin-bottom: .75rem;
+            padding-left: 4px;
+            padding-right: 4px;
+            // font-weight: 600;
+            // letter-spacing: .1rem;
+        }
