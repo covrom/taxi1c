@@ -67,6 +67,14 @@ button:hover {
   outline: 0;
 }
 
+.button:active,
+button:active {
+  background-image: none;
+  background-color: darken($button-color, 5%);
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset
+}
+
 input {
   &[type="submit"]:hover,
   &[type="reset"]:hover,
@@ -76,6 +84,18 @@ input {
     outline: 0;
   }
 }
+
+input {
+  &[type="submit"]:active,
+  &[type="reset"]:active,
+  &[type="button"]:active {
+    background-image: none;
+    background-color: darken($button-color, 5%);
+    -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset
+  }
+}
+
 
 .button:focus,
 button:focus {
@@ -140,6 +160,14 @@ button.button-primary:hover {
   outline: 0;
 }
 
+.button.button-primary:active,
+button.button-primary:active {
+  background-image: none;
+  background-color: darken($primary-button-color, 5%);
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset
+}
+
 input {
   &[type="submit"].button-primary:hover,
   &[type="reset"].button-primary:hover,
@@ -147,6 +175,17 @@ input {
     color: $dark-grey;
     border-color: lighten($dark-grey, 20%);
     outline: 0;
+  }
+}
+
+input {
+  &[type="submit"].button-primary:active,
+  &[type="reset"].button-primary:active,
+  &[type="button"].button-primary:active {
+    background-image: none;
+    background-color: darken($primary-button-color, 5%);
+    -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset
   }
 }
 
@@ -180,4 +219,92 @@ input {
     box-shadow: none;
     box-sizing: border-box;
   }
+}
+
+
+.iBtn {
+  display: inline-block;
+  margin-left: -21px;
+  border-width: 0px 2px;
+  // border-bottom-color: $button-border;
+  // border-left-style: none;
+  // border-right-style: solid;
+  border-color: transparent;
+  background-image: $edit-buttons;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: $control-height - 2px;
+  position: relative;
+  top: 1px;
+  vertical-align: middle;
+  padding: 0;
+  box-shadow: none;
+}
+
+.iBtn:ACTIVE:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 2px;
+  top: 0;
+  right: -15%;
+  left: -15%
+}
+
+.iBtn:HOVER,
+.iBtn:ACTIVE {
+  background-color: #f2f2f2
+}
+
+.input-buttons .iSBI {
+  @extend .iBtn;
+  height: 50%;
+  background-position: 37.5% center;
+}
+
+.input-buttons .iSBD {
+  @extend .iBtn;
+  position: absolute;
+  height: auto;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #a0a0a0 !important;
+  background-position: 25% center;
+}
+
+.input-buttons .iCBI {
+  @extend .iBtn;
+  background-position: center center
+}
+
+.input-buttons .iCB {
+  @extend .iBtn;
+  background-position: 87.5% center
+}
+
+.input-buttons .iCalcB {
+  @extend .iBtn;
+  background-position: 0 center
+}
+
+.input-buttons .iCalendB {
+  @extend .iBtn;
+  background-position: 12.5% center
+}
+
+.input-buttons .iOB {
+  @extend .iBtn;
+  background-position: 50% center
+}
+
+.input-buttons .iDLB,
+.input-buttons .iCLB {
+  @extend .iBtn;
+  background-position: 62.5% center
+}
+
+.input-buttons .iCLR {
+  @extend .iBtn;
+  background-position: 75% center
 }
