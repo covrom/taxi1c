@@ -3,36 +3,47 @@ package main
 import (
 	"html/template"
 
-	"github.com/covrom/taxi1c/cforms"
+	f "github.com/covrom/taxi1c/cforms"
 )
 
 func ControlForm() template.HTML {
-	cf := cforms.CItems{
-		cforms.PHtml(`Сетка является
+
+	mcol := []f.S{
+		"Одна", "Две", "Три", "Четыре", "Пять", "Шесть", "Семь", "Восемь", "Девять", "Десять", "Одиннадцать",
+	}
+	mwid := []f.ColType{
+		f.W1, f.W2, f.W3, f.W4, f.W5, f.W6, f.W7, f.W8, f.W9, f.W10, f.W11, f.W12,
+	}
+
+	var grsmp f.CItems
+	for i := 0; i < 11; i++ {
+		grsmp = append(grsmp, &f.Row{Cols: []f.Col{
+			f.Col{
+				Width: mwid[i],
+				Items: f.CItems{
+					mcol[i],
+				},
+			},
+			f.Col{
+				Width: mwid[10-i],
+				Items: f.CItems{
+					mcol[10-i],
+				},
+			},
+		}})
+	}
+
+	cf := f.Items(
+		f.PHtml(`Сетка является
 			<u>12-колоночной подвижной сеткой с максимальной шириной 960px</u>, которая адаптируется под браузер. 
 			Максимальная ширина может быть изменена одной строкой CSS и все колонки изменятся одномоментно. 
 			Синтаксис прост и позволяет легко создавать адаптивный дизайн страниц. 
 			Чтобы увидеть это, измените размер браузера.`),
-		&cforms.Div{
+		&f.Div{
 			Class: "grayback",
 			Style: "text-align:center;",
-			Items: cforms.CItems{
-				&cforms.Row{Cols: []cforms.Col{
-					cforms.Col{
-						Width: cforms.W1,
-						Items: cforms.CItems{
-							cforms.S("Одна"),
-						},
-					},
-					cforms.Col{
-						Width: cforms.W11,
-						Items: cforms.CItems{
-							cforms.S("Одиннадцать"),
-						},
-					},
-				}},
-			},
+			Items: grsmp,
 		},
-	}
+	)
 	return cf.Render()
 }

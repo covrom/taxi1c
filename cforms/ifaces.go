@@ -14,3 +14,7 @@ func (ci CItems) Render() (rv template.HTML) {
 	}
 	return
 }
+
+func Items(items ...CForm) CItems {
+	return items
+}
