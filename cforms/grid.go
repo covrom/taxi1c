@@ -22,7 +22,7 @@ const (
 )
 
 type Grid struct {
-	Rows []Row
+	Rows []*Row
 }
 
 func (g *Grid) Render() (rv template.HTML) {
@@ -36,7 +36,7 @@ func (g *Grid) Render() (rv template.HTML) {
 }
 
 type Row struct {
-	Cols []Col
+	Cols []*Col
 }
 
 func (r *Row) Render() (rv template.HTML) {
@@ -47,6 +47,10 @@ func (r *Row) Render() (rv template.HTML) {
 	}
 	rv += `</div>`
 	return
+}
+
+func ARow(cols ...*Col) *Row {
+	return &Row{Cols: cols}
 }
 
 type Col struct {
@@ -64,4 +68,8 @@ func (c *Col) Render() (rv template.HTML) {
 	}
 	rv += `</div>`
 	return
+}
+
+func ACol(w ColType, items CItems) *Col {
+	return &Col{Width: w, Items: items}
 }

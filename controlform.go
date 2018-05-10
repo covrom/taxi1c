@@ -17,20 +17,11 @@ func ControlForm() template.HTML {
 
 	var grsmp f.CItems
 	for i := 0; i < 11; i++ {
-		grsmp = append(grsmp, &f.Row{Cols: []f.Col{
-			f.Col{
-				Width: mwid[i],
-				Items: f.CItems{
-					mcol[i],
-				},
-			},
-			f.Col{
-				Width: mwid[10-i],
-				Items: f.CItems{
-					mcol[10-i],
-				},
-			},
-		}})
+		grsmp = append(grsmp,
+			f.ARow(
+				f.ACol(mwid[i], f.CItems{mcol[i]}),
+				f.ACol(mwid[10-i], f.CItems{mcol[10-i]}),
+			))
 	}
 
 	cf := f.Items(
