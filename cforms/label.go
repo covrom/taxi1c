@@ -42,6 +42,10 @@ func (d Div) Render() (rv template.HTML) {
 	return
 }
 
+func ADiv(class, style string, items CItems) *Div {
+	return &Div{Class: class, Style: style, Items: items}
+}
+
 type Span struct {
 	Class string
 	Style string

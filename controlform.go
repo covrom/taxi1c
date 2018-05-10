@@ -30,11 +30,7 @@ func ControlForm() template.HTML {
 			Максимальная ширина может быть изменена одной строкой CSS и все колонки изменятся одномоментно. 
 			Синтаксис прост и позволяет легко создавать адаптивный дизайн страниц. 
 			Чтобы увидеть это, измените размер браузера.`),
-		&f.Div{
-			Class: "grayback",
-			Style: "text-align:center;",
-			Items: grsmp,
-		},
+		f.ADiv("grayback", "text-align:center;", grsmp),
 	)
 	return cf.Render()
 }
