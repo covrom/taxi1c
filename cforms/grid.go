@@ -71,7 +71,6 @@ type CCol struct {
 func (c *CCol) Render() template.HTML {
 
 	c.Tag = "div"
-	c.Content = ""
 	cls := string(c.Width)
 	if len(c.Width) == 0 {
 		cls = string(W12)
