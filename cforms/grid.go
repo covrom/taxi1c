@@ -35,6 +35,11 @@ func (g *CGrid) Render() template.HTML {
 	return g.RenderTag()
 }
 
+func (t *CGrid) SetId(id string) *CGrid {
+	t.Id = id
+	return t
+}
+
 func Grid(rows ...*CRow) *CGrid {
 	return &CGrid{Rows: rows}
 }
@@ -59,6 +64,11 @@ func (r *CRow) Render() template.HTML {
 	return r.RenderTag()
 }
 
+func (t *CRow) SetId(id string) *CRow {
+	t.Id = id
+	return t
+}
+
 func Row(cols ...*CCol) *CRow {
 	return &CRow{Cols: cols}
 }
@@ -81,6 +91,11 @@ func (c *CCol) Render() template.HTML {
 		c.Class = cls
 	}
 	return c.RenderTag()
+}
+
+func (t *CCol) SetId(id string) *CCol {
+	t.Id = id
+	return t
 }
 
 func Col(w ColType, items ...CForm) *CCol {
