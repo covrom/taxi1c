@@ -21,55 +21,71 @@ const (
 	W12 ColType = "twelve columns"
 )
 
-type Grid struct {
-	Rows []*Row
+type CGrid struct {
+	Rows []*CRow
+	CStdForm
 }
 
-func (g *Grid) Render() (rv template.HTML) {
-
-	rv = `<div>`
+func (g *CGrid) Render() template.HTML {
+	g.Tag = "div"
+	g.Content = ""
 	for _, r := range g.Rows {
-		rv += r.Render()
+		g.Content += r.Render()
 	}
-	rv += `</div>`
-	return
+	return g.RenderTag()
 }
 
-type Row struct {
-	Cols []*Col
+func Grid(rows ...*CRow) *CGrid {
+	return &CGrid{Rows: rows}
 }
 
-func (r *Row) Render() (rv template.HTML) {
+type CRow struct {
+	Cols []*CCol
+	CStdForm
+}
 
-	rv = `<div class="row">`
+func (r *CRow) Render() template.HTML {
+	r.Tag = "div"
+	r.Content = ""
+	cls := "row"
+	if len(r.Class) > 0 {
+		r.Class += " " + cls
+	} else {
+		r.Class = cls
+	}
 	for _, c := range r.Cols {
-		rv += c.Render()
+		r.Content += c.Render()
 	}
-	rv += `</div>`
-	return
+	return r.RenderTag()
 }
 
-func ARow(cols ...*Col) *Row {
-	return &Row{Cols: cols}
+func Row(cols ...*CCol) *CRow {
+	return &CRow{Cols: cols}
 }
 
-type Col struct {
+type CCol struct {
 	Width ColType
-	Items CItems
+	CStdForm
 }
 
-func (c *Col) Render() (rv template.HTML) {
-	rv = `<div class="` + template.HTML(c.Width) + `">`
+func (c *CCol) Render() template.HTML {
+
+	c.Tag = "div"
+	c.Content = ""
+	cls := string(c.Width)
 	if len(c.Width) == 0 {
-		rv = `<div style="width:100%;">`
+		cls = string(W12)
 	}
-	for _, item := range c.Items {
-		rv += item.Render()
+	if len(c.Class) > 0 {
+		c.Class += " " + cls
+	} else {
+		c.Class = cls
 	}
-	rv += `</div>`
-	return
+	return c.RenderTag()
 }
 
-func ACol(w ColType, items CItems) *Col {
-	return &Col{Width: w, Items: items}
+func Col(w ColType, items ...CForm) *CCol {
+	rv := &CCol{Width: w}
+	rv.Content = CItems(items).Render()
+	return rv
 }

@@ -18,19 +18,19 @@ func ControlForm() template.HTML {
 	var grsmp f.CItems
 	for i := 0; i < 11; i++ {
 		grsmp = append(grsmp,
-			f.ARow(
-				f.ACol(mwid[i], f.CItems{mcol[i]}),
-				f.ACol(mwid[10-i], f.CItems{mcol[10-i]}),
+			f.Row(
+				f.Col(mwid[i], mcol[i]),
+				f.Col(mwid[10-i], mcol[10-i]),
 			))
 	}
 
 	cf := f.Items(
-		f.PHtml(`Сетка является
+		f.P(f.SH(`Сетка является
 			<u>12-колоночной подвижной сеткой с максимальной шириной 960px</u>, которая адаптируется под браузер. 
 			Максимальная ширина может быть изменена одной строкой CSS и все колонки изменятся одномоментно. 
 			Синтаксис прост и позволяет легко создавать адаптивный дизайн страниц. 
-			Чтобы увидеть это, измените размер браузера.`),
-		f.ADiv("grayback", "text-align:center;", grsmp),
+			Чтобы увидеть это, измените размер браузера.`)),
+		f.Div("grayback", "text-align:center;", grsmp),
 	)
 	return cf.Render()
 }
