@@ -45,3 +45,4 @@ func (sf *CStdForm) RenderTag() (res template.HTML) {
 	res += ">" + sf.Content + "</" + template.HTML(sf.Tag) + ">"
 	return
 }
+
