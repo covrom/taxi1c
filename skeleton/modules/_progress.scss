@@ -1,0 +1,33 @@
+.meter {
+    display: block;
+    height: $control-height;
+    font-size: $button-font-height;
+    line-height: $control-height;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: $global-radius;
+    background-color: $button-color;
+    border: 1px solid $button-border;
+    position: relative;
+    box-sizing: border-box;
+    color: $font-color;
+}
+
+.meter::before {
+    content: attr(data-label);
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.meter .value {
+    display: inline-block;
+    height: 100%;
+    background-color: $primary-color;
+    position: relative;
+    overflow: hidden;
+}
