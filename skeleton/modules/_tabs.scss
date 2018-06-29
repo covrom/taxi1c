@@ -1,0 +1,108 @@
+
+.tabs {
+    width: 100%;
+    height: 100%;
+}
+.tabs ul,
+.tabs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tabs,
+.tabs input[type="radio"]:checked + label {
+    position: relative;
+}
+.tabs li,
+.tabs input[type="radio"] + label {
+    display: inline-block;
+}
+.tabs li > div,
+.tabs input[type="radio"] {
+    position: absolute;
+}
+.tabs li > div,
+.tabs input[type="radio"] + label {
+    border: solid 1px $button-border;
+}
+.tabs li {
+    vertical-align: top;
+}
+// .tabs li:first-child {
+//     margin-left: 8px;
+// }
+.tabs li > div {
+    top: $control-height;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: $control-height/2;
+    overflow: auto;
+    background: $button-color;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tabs input[type="radio"] + label {
+    margin: 0 2px 0 0;
+    padding: 0 $control-height/2;
+    line-height: $control-height;
+    background: lighten($light-grey, 6.4%);
+    text-align: center;
+    border-radius: $global-radius $global-radius 0 0;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.tabs input[type="radio"]:checked + label {
+    z-index: 1;
+    background: $button-color;
+    border-bottom-color: $button-color;
+    cursor: default;
+}
+.tabs input[type="radio"] {
+    opacity: 0;
+}
+.tabs input[type="radio"] ~ div {
+    display: none;
+}
+.tabs input[type="radio"]:checked:not(:disabled) ~ div {
+    display: block;
+}
+.tabs input[type="radio"]:disabled + label {
+    color: $border-color;
+    cursor: no-drop;
+}
+
+///////////
+// ul.tab-nav {
+//     list-style: none;
+//     border-bottom: 1px solid $button-border;
+//     padding-left: 5px;
+// }
+
+// ul.tab-nav li {
+//     display: inline;
+// }
+
+// ul.tab-nav li a.button {
+//     border-bottom-left-radius: 0;
+//     border-bottom-right-radius: 0;
+//     margin-bottom: -1px;
+//     border-bottom: 1px solid $button-border;
+//     box-shadow: none;
+//     background-image: none;
+// }
+
+// ul.tab-nav li a.active.button {
+//     border-bottom: none;
+// }
+
+// .tab-content .tab-pane {
+//     display: none;
+// }
+
+// .tab-content .tab-pane.active {
+//     display: block;
+// }
