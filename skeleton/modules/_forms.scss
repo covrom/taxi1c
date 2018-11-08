@@ -2,6 +2,14 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 input[type='email'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='file'],
 input[type='number'],
 input[type='search'],
 input[type='text'],
@@ -27,6 +35,14 @@ select {
 // Removes awkward default styles on some inputs for iOS
 input {
   &[type="email"],
+  &[type='color'],
+  &[type='date'],
+  &[type='month'],
+  &[type='week'],
+  &[type='time'],
+  &[type='datetime'],
+  &[type='datetime-local'],
+  &[type='file'],
   &[type="number"],
   &[type="search"],
   &[type="text"],
@@ -50,6 +66,14 @@ textarea {
 
 input {
   &[type="email"]:focus,
+  &[type='color'],
+  &[type='date'],
+  &[type='month'],
+  &[type='week'],
+  &[type='time'],
+  &[type='datetime'],
+  &[type='datetime-local'],
+  &[type='file'],
   &[type="number"]:focus,
   &[type="search"]:focus,
   &[type="text"]:focus,
@@ -113,6 +137,14 @@ label > .label-body {
 
 .input-buttons input {
   &[type="email"],
+  &[type='color'],
+  &[type='date'],
+  &[type='month'],
+  &[type='week'],
+  &[type='time'],
+  &[type='datetime'],
+  &[type='datetime-local'],
+  &[type='file'],
   &[type="number"],
   &[type="search"],
   &[type="text"],

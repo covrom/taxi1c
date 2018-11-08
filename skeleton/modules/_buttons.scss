@@ -205,6 +205,14 @@ input {
     outline: 0;
   }
   &[type="email"],
+  &[type='color'],
+  &[type='date'],
+  &[type='month'],
+  &[type='week'],
+  &[type='time'],
+  &[type='datetime'],
+  &[type='datetime-local'],
+  &[type='file'],
   &[type="number"],
   &[type="search"],
   &[type="text"],
