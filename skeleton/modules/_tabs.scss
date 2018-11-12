@@ -3,12 +3,27 @@
     width: 100%;
     height: 100%;
 }
+
 .tabs ul,
 .tabs li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+.tabs ul {
+    border-bottom-color: $light-grey;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    align-items: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: $control-height/2;
+}
+
 .tabs,
 .tabs input[type="radio"]:checked + label {
     position: relative;
@@ -23,7 +38,7 @@
 }
 .tabs li > div,
 .tabs input[type="radio"] + label {
-    border: solid 1px $button-border;
+    border: none; //solid 1px $button-border;
 }
 .tabs li {
     vertical-align: top;
@@ -32,7 +47,7 @@
 //     margin-left: 8px;
 // }
 .tabs li > div {
-    top: $control-height;
+    top: $control-height+1px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -57,8 +72,8 @@
 }
 .tabs input[type="radio"]:checked + label {
     z-index: 1;
-    background: $button-color;
-    border-bottom-color: $button-color;
+    background: lighten($primary-button-color, 20%);
+    border-bottom-color: $primary-button-color;
     cursor: default;
 }
 .tabs input[type="radio"] {
