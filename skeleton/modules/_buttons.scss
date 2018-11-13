@@ -321,10 +321,10 @@ input {
   content: "";
   position: absolute;
   top:-6px;
-  left: 12px;
+  left: 6px;
   border-width: 4px 6px 0 6px;
   border-style: solid;
-  border-color: lighten($primary-button-color, 20%) transparent transparent transparent;
+  border-color: lighten(red, 30%) transparent transparent transparent;
   z-index: 99;
   opacity:0;
 }
@@ -332,17 +332,16 @@ input {
 [tooltip]::after {
   content: attr(tooltip);
   position: absolute;
-  left: 6px;
+  left: 0px;
   top:-6px;
   transform: translateY(-100%);
-  background: lighten($primary-button-color, 20%);
+  background: lighten(red, 30%);
   text-align: center;
-  padding:4px 2px;
+  padding:4px $control-height/2;
   font-size: 12px;
   min-width: 80px;
   border-radius: 5px;
   pointer-events: none;
-  padding: 4px 4px;
   z-index:99;
   opacity:0;
 }
