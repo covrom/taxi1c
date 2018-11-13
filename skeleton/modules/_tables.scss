@@ -18,9 +18,9 @@ td:last-child {
 }
 
 .flattable table,
-th,
-tr,
-td {
+.flattable th,
+.flattable tr,
+.flattable td {
     border-bottom: none;
     padding: 0px 6px;
 }
