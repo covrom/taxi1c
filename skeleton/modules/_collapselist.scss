@@ -1,0 +1,49 @@
+.collapselist ul { 
+    list-style-type: none; 
+    margin-bottom: .1rem;
+}
+.collapselist li { 
+    margin-bottom: .1rem;
+}
+.collapselist label {
+    margin-bottom: .1rem;
+    padding: 3px;
+    padding-left: 16px;
+}
+.collapselist input[type=checkbox] { display: none; }
+.collapselist input[type=checkbox] ~ ul {
+    margin: 0.5rem 0 0.5rem 1rem;;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition:all .1s ease;
+    -moz-transition:all .1s ease;
+    -o-transition:all .1s ease;
+    transition:all .1s ease;
+}
+.collapselist input[type=checkbox]:checked ~ ul { 
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 1;
+}
+.collapselist input[type=checkbox] + label:before{
+    transform-origin:25% 50%;
+    border: 4px solid transparent;
+    border-left-color: $primary-color;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    text-align: center;
+    content: '';
+    -webkit-transition:all .1s ease;  
+    -moz-transition:all .1s ease;  
+    -o-transition:all .1s ease;  
+    transition:all .1s ease; 
+    position: absolute;
+    margin-top: 1px;
+}
+.collapselist input[type=checkbox]:checked + label:before {
+    transform: rotate(90deg);
+}
