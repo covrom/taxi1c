@@ -1,17 +1,16 @@
-
 .tabs {
     width: 100%;
     height: 100%;
 }
 
-.tabs ul,
-.tabs li {
+.tabs>ul,
+.tabs>ul>li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.tabs ul {
+.tabs>ul {
     border-bottom-color: $light-grey;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -25,40 +24,45 @@
 }
 
 .tabs,
-.tabs input[type="radio"]:checked + label {
+.tabs>ul>li>input[type="radio"]:checked+label {
     position: relative;
 }
-.tabs li,
-.tabs input[type="radio"] + label {
+
+.tabs>ul>li,
+.tabs>ul>li>input[type="radio"]+label {
     display: inline-block;
 }
-.tabs li > div,
+
+.tabs>ul>li>div,
 .tabs input[type="radio"] {
     position: absolute;
 }
-.tabs li > div,
-.tabs input[type="radio"] + label {
+
+.tabs>ul>li>div,
+.tabs>ul>li>input[type="radio"]+label {
     border: none; //solid 1px $button-border;
 }
-.tabs li {
+
+.tabs>ul>li {
     vertical-align: top;
 }
+
 // .tabs li:first-child {
 //     margin-left: 8px;
 // }
-.tabs li > div {
+.tabs>ul>li>div {
     top: $control-height+1px;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: $control-height/2;
-    // overflow: auto;
+    padding: $control-height/2; // overflow: auto;
     background: $button-color;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.tabs input[type="radio"] + label {
+
+.tabs>ul>li>input[type="radio"]+label {
     margin: 0 2px 0 0;
     padding: 0 $control-height/2;
     line-height: $control-height;
@@ -70,22 +74,27 @@
     -webkit-user-select: none;
     user-select: none;
 }
-.tabs input[type="radio"]:checked + label {
+
+.tabs>ul>li>input[type="radio"]:checked+label {
     z-index: 1;
     background: lighten($primary-button-color, 20%);
     border-bottom-color: $primary-button-color;
     cursor: default;
 }
-.tabs input[type="radio"] {
+
+.tabs>ul>li>input[type="radio"] {
     opacity: 0;
 }
-.tabs input[type="radio"] ~ div {
+
+.tabs>ul>li>input[type="radio"]~div {
     display: none;
 }
-.tabs input[type="radio"]:checked:not(:disabled) ~ div {
+
+.tabs>ul>li>input[type="radio"]:checked:not(:disabled)~div {
     display: block;
 }
-.tabs input[type="radio"]:disabled + label {
+
+.tabs>ul>li>input[type="radio"]:disabled+label {
     color: $border-color;
     cursor: no-drop;
 }
