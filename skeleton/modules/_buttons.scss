@@ -349,3 +349,11 @@ input {
 .tooltip::after, .tooltip::before{
   opacity:1
 }
+
+.hovertooltip::after, .hovertooltip::before{
+  opacity:0
+}
+
+.hovertooltip:hover::after, .hovertooltip:hover::before{
+  opacity:1
+}
