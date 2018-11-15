@@ -342,6 +342,7 @@ input {
   min-width: 80px;
   border-radius: 5px;
   pointer-events: none;
+  color: darken($font-color, 20%);
   z-index:99;
   opacity:0;
 }
