@@ -358,3 +358,9 @@ input {
 .hovertooltip:hover::after, .hovertooltip:hover::before{
   opacity:1
 }
+
+.actionBtn {
+  height: 100%;
+  padding: 4px;
+  line-height: 100%;
+}
